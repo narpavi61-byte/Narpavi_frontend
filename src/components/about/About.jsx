@@ -1,0 +1,361 @@
+import React, { useState, useEffect } from 'react';
+import { FaPlay, FaHome, FaBullseye, FaEye, FaFacebookF, FaTwitter, FaLinkedinIn, FaWhatsapp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+
+export default function About() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+
+  // Random property images for banner rotation
+  const bannerImages = [
+    'https://static.vecteezy.com/system/resources/previews/017/508/529/non_2x/construction-real-estate-contractor-concept-residential-house-building-drawings-free-photo.jpg',
+    'https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg',
+    'https://static1.squarespace.com/static/5491b846e4b07a0c1fb4d840/t/66eb34ce16f23a1c722839ba/1726690510472/Denver+custom+home+opt.jpg?format=1500w',
+    'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg'
+  ];
+
+  // Auto-rotate banner images
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % bannerImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [bannerImages.length]);
+
+  const agents = [
+    {
+      name: 'Jordan Phillips',
+      role: 'Real Estate Agent',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80',
+      socials: ['facebook', 'twitter']
+    },
+    {
+      name: 'Olivia Harper',
+      role: 'Property Manager',
+      image: 'https://t3.ftcdn.net/jpg/06/99/46/60/360_F_699466075_DaPTBNlNQTOwwjkOiFEoOvzDV0ByXR9E.jpg',
+      socials: ['facebook', 'linkedin']
+    },
+    {
+      name: 'Ethan Harrison',
+      role: 'Real Estate Broker',
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80',
+      socials: ['facebook', 'linkedin']
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: 'Charlotte Turner',
+      role: 'Founder at Ponix',
+      image: 'https://t3.ftcdn.net/jpg/06/99/46/60/360_F_699466075_DaPTBNlNQTOwwjkOiFEoOvzDV0ByXR9E.jpg',
+      testimonial: 'Exceptional service! They made my home-buying journey easy and stress-free. Every detail was managed professionally, and advice was invaluable. I appreciated their quick responses and dedication. Highly recommend their service!'
+    },
+    {
+      name: 'Michael Rodriguez',
+      role: 'CEO at TechStart',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      testimonial: 'Outstanding experience from start to finish! The team went above and beyond to find the perfect property for our business needs. Their market knowledge and negotiation skills saved us both time and money.'
+    },
+    {
+      name: 'Sarah Johnson',
+      role: 'Marketing Director',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      testimonial: 'Professional, knowledgeable, and genuinely caring team. They understood our unique requirements and delivered exactly what we were looking for. The entire process was transparent and efficient.'
+    },
+    {
+      name: 'David Chen',
+      role: 'Investment Consultant',
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      testimonial: 'Incredible attention to detail and customer service. They helped us navigate complex property transactions with ease. Their expertise in the market trends and investment opportunities is unmatched.'
+    }
+  ];
+
+  const getSocialIcon = (social) => {
+    switch (social) {
+      case 'facebook': return <FaFacebookF className="w-4 h-4" />;
+      case 'twitter': return <FaTwitter className="w-4 h-4" />;
+      case 'linkedin': return <FaLinkedinIn className="w-4 h-4" />;
+      default: return null;
+    }
+  };
+
+  const nextTestimonial = () => {
+    setCurrentTestimonialIndex((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonialIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Hero Banner Section */}
+      <div className="relative h-[60vh] sm:h-[80vh] md:h-screen overflow-hidden">
+  {/* Background Images with Animation */}
+  {bannerImages.map((image, index) => (
+    <div
+      key={index}
+      className={`absolute inset-0 transition-opacity duration-1000 ${
+        index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+      }`}
+    >
+      <div
+        className="w-full h-full bg-cover bg-center transform transition-transform duration-[20000ms] hover:scale-105"
+        style={{
+          backgroundImage: `url(${image})`,
+          animation: `slowPan 20s ease-in-out infinite alternate`
+        }}
+      />
+    </div>
+  ))}
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black opacity-50" />
+
+  {/* Content */}
+  <div className="relative z-10 flex items-center justify-center h-full text-center text-white px-3 sm:px-4">
+    <div className="max-w-4xl">
+      <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 sm:mb-6 leading-snug md:leading-tight">
+        Experience a Seamless Journey<br className="hidden md:block" />
+        to Your Dream Property
+      </h1>
+      <p className="text-sm sm:text-base md:text-2xl mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+        Welcome to RealPro, your trusted partner in navigating the dynamic world of
+        real estate. Excellence in helping clients achieve their property goals.
+      </p>
+      <button className="bg-white text-black px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-3 rounded font-medium hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base md:text-lg">
+        Explore Projects
+      </button>
+    </div>
+  </div>
+
+  {/* Custom CSS for animation */}
+  <style jsx>{`
+    @keyframes slowPan {
+      0% { transform: scale(1) translateX(0); }
+      100% { transform: scale(1.1) translateX(-2%); }
+    }
+  `}</style>
+</div>
+
+
+      {/* Leading the Way Section */}
+      <div className="py-20 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 leading-tight">
+                Leading the Way in<br />
+                Property Excellence
+              </h2>
+              
+              {/* Experiential Living */}
+              <div className="mb-10">
+                <div className="flex items-start mb-4">
+                  <div className="w-12 h-12 bg-[#057CC0] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <FaHome className="text-white w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Experiential Living</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Real estate agencies play a pivotal role in turning this vision into 
+                      reality. From listening to clients' specific personal property solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Smart Investment */}
+              <div>
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-[#057CC0] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                    <FaPlay className="text-white w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Smart Investment</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      Beyond individual dreams, real estate agencies informed decisions, reducing 
+                      risks, and maximizing returns through strategy and analysis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Modern Property"
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Stats Section */}
+      <div className="py-16 pr-4 md:pl-10 pl-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
+              <h3 className="text-5xl font-medium text-gray-900 mb-2">+100</h3>
+              <p className="text-gray-600 text-lg">Units Ready</p>
+            </div>
+            <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
+              <h3 className="text-5xl font-medium text-gray-900 mb-2">+60K</h3>
+              <p className="text-gray-600 text-lg">Customers</p>
+            </div>
+            <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
+              <h3 className="text-5xl font-medium text-gray-900 mb-2">+70K</h3>
+              <p className="text-gray-600 text-lg">Reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mission Section */}
+      <div className="py-20 px-4 bg-[#EEF9FF]">
+        <div className="max-w-7xl mx-auto text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Our Mission is Driven by a Clear Set<br />
+            of Guiding Values
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* Our Mission */}
+          <div className="text-center p-8 rounded-xl" style={{backgroundColor: '#D4E8F3'}}>
+            <div className="w-16 h-16 bg-[#176B9B] rounded-full flex items-center justify-center mx-auto mb-6">
+              <FaBullseye className="text-white w-8 h-8" />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Create real estate seamless property buying, selling, and 
+              leasing experiences through innovative technology and 
+              expert guidance.Empower communities by making home 
+              ownership and property investment accessible to all.
+            </p>
+          </div>
+
+          {/* Our Vision */}
+          <div className="text-center p-8 rounded-xl" style={{backgroundColor: '#D4E8F3'}}>
+            <div className="w-16 h-16 bg-[#176B9B] rounded-full flex items-center justify-center mx-auto mb-6">
+              <FaEye className="text-white w-8 h-8" />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Transform the real estate industry by setting new 
+              standards of excellence, sustainability, and satisfaction. 
+              Recognized as a pioneer in providing personalized, 
+              customer-focused real estate and the services globally.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+
+      {/* Our Expert Agents Section */}
+      <div className="py-20 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Our Expert Agents</h2>
+            {/* <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+              View All Agents
+            </button> */}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {agents.map((agent, index) => (
+              <div key={index} className="">
+                <div className="aspect-w-3 aspect-h-4">
+                  <img 
+                    src={agent.image}
+                    alt={agent.name}
+                    className="w-full h-96 object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="py-6 px-2 flex justify-between">
+                  <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">{agent.name}</h3>
+                  <p className="text-gray-600 mb-4">{agent.role}</p>
+                  </div>
+                  <div className="flex space-x-3">
+                    {agent.socials.map((social, socialIndex) => (
+                      <button 
+                        key={socialIndex}
+                        className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-300"
+                      >
+                        {getSocialIcon(social)}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+
+      {/* Testimonials Section */}
+<div className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div className="max-w-7xl mx-auto">
+    {/* Header */}
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8 md:mb-12">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center md:text-left mb-6 md:mb-0">
+        Trusted Real Estate Clients
+      </h2>
+
+      <div className="flex justify-center md:justify-end space-x-3">
+        <button
+          onClick={prevTestimonial}
+          className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-300"
+        >
+          <FaChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
+        </button>
+        <button
+          onClick={nextTestimonial}
+          className="w-10 h-10 sm:w-12 sm:h-12 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-300"
+        >
+          <FaChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
+        </button>
+      </div>
+    </div>
+
+    {/* Content Grid */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 lg:gap-16 bg-[#EEF9FF] rounded-2xl items-center">
+      {/* Left - Image */}
+      <div className="relative flex ">
+        <img
+          src={testimonials[currentTestimonialIndex].image}
+          alt={testimonials[currentTestimonialIndex].name}
+          className="w-full md:w-[90%] h-64 md:h-[30rem] object-cover rounded-2xl lg:rounded-bl-xl lg:rounded-tl-xl"
+        />
+      </div>
+
+      {/* Right - Testimonial Content */}
+      <div className="text-center lg:text-left py-5 md:py-10 px-5 flex flex-col justify-between h-full">
+        <blockquote className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed mb-6 sm:mb-8">
+          "{testimonials[currentTestimonialIndex].testimonial}"
+        </blockquote>
+
+        <div>
+          <h4 className="text-lg sm:text-xl font-bold text-gray-900">
+            {testimonials[currentTestimonialIndex].name}
+          </h4>
+          <p className="text-gray-600 mt-1 text-sm sm:text-base">
+            {testimonials[currentTestimonialIndex].role}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  );
+}
