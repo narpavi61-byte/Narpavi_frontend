@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Bg from "../../assets/homeImg/hero.png"
+import Bg from "../../assets/homeImg/Hero.png"
 import overlay from "../../assets/homeImg/Overlay.png"
 import about1 from "../../assets/homeImg/about1.png"
 import about2 from "../../assets/homeImg/about2.png"
