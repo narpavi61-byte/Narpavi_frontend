@@ -2,10 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { FaPlay, FaHome, FaBullseye, FaEye, FaFacebookF, FaTwitter, FaLinkedinIn, FaWhatsapp, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import FAQ from '../footer/Faq';
 import { motion, } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/project"); // Redirect to Project page
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -136,7 +142,7 @@ export default function About() {
               whileInView={{ opacity: 1, filter: "blur(0px)" }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 sm:mb-6 leading-snug md:leading-tight">
+              className="text-2xl sm:text-3xl md:text-6xl font-mrdium mb-4 sm:mb-6 leading-snug md:leading-tight">
               Experience a Seamless Journey<br className="hidden md:block" />
               to Your Dream Property
             </motion.h1>
@@ -149,7 +155,7 @@ export default function About() {
               Welcome to RealPro, your trusted partner in navigating the dynamic world of
               real estate. Excellence in helping clients achieve their property goals.
             </motion.p>
-            <button className="bg-white text-black px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-3 rounded font-medium hover:bg-gray-100 transition-transform duration-400 hover:scale-110  text-sm sm:text-base md:text-lg">
+            <button  onClick={handleClick} className="bg-white text-black px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-3 rounded font-medium hover:bg-gray-100 transition-transform duration-400 hover:scale-110  text-sm sm:text-base md:text-lg">
               Explore Projects
             </button>
           </div>
@@ -166,7 +172,7 @@ export default function About() {
 
 
       {/* Leading the Way Section */}
-      <div className="py-20 px-4 bg-white">
+      <div className="lg:py-18 py-14 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
@@ -176,7 +182,7 @@ export default function About() {
                 whileInView={{ opacity: 1, filter: "blur(0px)" }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 leading-tight">
+                className="text-3xl md:text-6xl font-medium text-gray-900 mb-12 leading-tight">
                 Leading the Way in<br />
                 Property Excellence
               </motion.h2>
@@ -193,7 +199,7 @@ export default function About() {
                     <FaHome className="text-white w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Experiential Living</h3>
+                    <h3 className=" text-lg md:text-xl font-medium text-gray-900 mb-3">Experiential Living</h3>
                     <motion.p className="text-gray-600 leading-relaxed"
                     >
                       Real estate agencies play a pivotal role in turning this vision into
@@ -215,7 +221,7 @@ export default function About() {
                     <FaPlay className="text-white w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Smart Investment</h3>
+                    <h3 className="text-xl font-medium text-gray-900 mb-3">Smart Investment</h3>
                     <p className="text-gray-600 leading-relaxed">
                       Beyond individual dreams, real estate agencies informed decisions, reducing
                       risks, and maximizing returns through strategy and analysis.
@@ -238,7 +244,7 @@ export default function About() {
       </div>
 
       {/* Stats Section */}
-      <div className="py-16 pr-4 md:pl-10 pl-4">
+      <div className="md:py-16 py-10 pr-4 md:pl-10 pl-4">
         <div className="max-w-7xl mx-auto">
           <motion.div
             variants={fadeUp}
@@ -246,29 +252,29 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true }} className="grid md:grid-cols-3 gap-8">
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
-              <h3 className="text-5xl font-medium text-gray-900 mb-2">+100</h3>
-              <p className="text-gray-600 text-lg">Units Ready</p>
+              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+100</h3>
+              <p className="text-gray-600 md:text-lg">Units Ready</p>
             </div>
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
-              <h3 className="text-5xl font-medium text-gray-900 mb-2">+60K</h3>
-              <p className="text-gray-600 text-lg">Customers</p>
+              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+60K</h3>
+              <p className="text-gray-600 md:text-lg">Customers</p>
             </div>
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
-              <h3 className="text-5xl font-medium text-gray-900 mb-2">+70K</h3>
-              <p className="text-gray-600 text-lg">Reviews</p>
+              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+70K</h3>
+              <p className="text-gray-600 md:text-lg">Reviews</p>
             </div>
           </motion.div>
         </div>
       </div>
 
       {/* Mission Section */}
-      <div className="py-20 px-4 bg-[#EEF9FF]">
+      <div className="md:py-20 py-14 px-4 bg-[#EEF9FF]">
         <div className="max-w-7xl mx-auto text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }} className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            transition={{ duration: 1, ease: "easeOut" }} className="text-3xl md:text-6xl font-medium text-gray-900 mb-4">
             Our Mission is Driven by a Clear Set<br />
             of Guiding Values
           </motion.h2>
@@ -286,7 +292,7 @@ export default function About() {
             <div className="w-16 h-16 bg-[#176B9B] rounded-full flex items-center justify-center mx-auto mb-6">
               <FaBullseye className="text-white w-8 h-8" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+            <h3 className="text-2xl font-medium text-gray-900 mb-4">Our Mission</h3>
             <p className="text-gray-700 leading-relaxed">
               Create real estate seamless property buying, selling, and
               leasing experiences through innovative technology and
@@ -305,7 +311,7 @@ export default function About() {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }} className="text-2xl font-bold text-gray-900 mb-4">Our Vision</motion.h3>
+            transition={{ duration: 1, ease: "easeOut" }} className="text-2xl font-medium text-gray-900 mb-4">Our Vision</motion.h3>
             <motion.p 
             variants={fadeUp}
             initial="hidden"
@@ -323,7 +329,7 @@ export default function About() {
 
 
       {/* Our Expert Agents Section */}
-      <div className="py-20 px-4 bg-gray-50">
+      <div className="md:py-18 py-14 px-4 bg-gray-50">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -336,7 +342,7 @@ export default function About() {
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-              className="text-4xl md:text-5xl font-bold text-gray-900">Our Expert Agents</motion.h2>
+              className="text-3xl md:text-6xl font-medium text-gray-900">Our Expert Agents</motion.h2>
             {/* <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300">
               View All Agents
             </button> */}
@@ -354,7 +360,7 @@ export default function About() {
                 </div>
                 <div className="py-6 px-2 flex justify-between">
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-1">{agent.name}</h3>
+                    <h3 className="text-xl font-medium text-gray-900 mb-1">{agent.name}</h3>
                     <p className="text-gray-600 mb-4">{agent.role}</p>
                   </div>
                   <div className="flex space-x-3">
@@ -388,7 +394,7 @@ export default function About() {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }} className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 text-center md:text-left mb-6 md:mb-0">
+            transition={{ duration: 1, ease: "easeOut" }} className="text-3xl  md:text-6xl font-medium text-gray-900 text-center md:text-left mb-6 md:mb-0">
               Trusted Real Estate Clients
             </motion.h2>
 

@@ -58,7 +58,7 @@ export default function FAQ() {
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-3xl md:text-6xl font-semibold mb-4">Frequently Asked <br />Questions</motion.h2>
+            className="text-3xl md:text-6xl font-medium mb-4">Frequently Asked <br />Questions</motion.h2>
         <p className="text-gray-600">
           If there are question you want to ask.<br />
           We will answer all your question.

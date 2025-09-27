@@ -42,8 +42,8 @@ export default function ContactForm() {
           initial={{ opacity: 0, filter: "blur(10px)" }}
               whileInView={{ opacity: 1, filter: "blur(0px)" }}
               viewport={{ once: true }}
-              transition={{ duration: 1, ease: "easeOut" }}className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Get in touch with us!
+              transition={{ duration: 1, ease: "easeOut" }}className="text-3xl md:text-6xl  font-medium text-white leading-tight">
+            Get in touch <br /> with us!
           </motion.h1>
           <motion.p 
            variants={fadeUp}
@@ -59,7 +59,7 @@ export default function ContactForm() {
       {/* Form Section */}
       <div className="relative -mt-24 md:-mt-28 px-4 z-20 mb-20">
         <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-300 shadow-xs p-8 md:p-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-10">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 text-center mb-10">
             Let&apos;s chat!
           </h2>
 

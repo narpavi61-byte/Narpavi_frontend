@@ -65,7 +65,7 @@ export default function Navbar() {
                 />
               </div>
               <span
-                className={`font-medium transition-all duration-300 ${isMenuOpen ? 'opacity-0 scale-90' : 'opacity-100 scale-100'
+                className={`font-medium transition-all duration-300 ${isMenuOpen ? 'opacity-100 scale-90' : 'opacity-100 scale-100'
                   }`}
               >
                 Menu
@@ -113,9 +113,9 @@ export default function Navbar() {
           <div className="pb-4">
             {[
               { path: '/', label: 'Home' },
+              { path: '/about', label: 'About Us' },
               { path: '/project', label: 'Portfolio' },
               { path: '/contact', label: 'Contact Us' },
-              { path: '/about', label: 'About Us' },
               { path: '/blog', label: 'Blog' },
             ].map(({ path, label }) => (
               <Link

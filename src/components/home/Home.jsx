@@ -20,8 +20,16 @@ import { PiFire } from "react-icons/pi";
 import { motion, AnimatePresence } from "framer-motion";
 import FAQ from "../footer/Faq";
 import { FaArrowRight } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/project"); // Redirect to Project page
+  };
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -491,6 +499,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.5, ease: "easeOut" }}
+            onClick={handleClick}
           >
             Explore Projects
           </motion.button>
@@ -601,7 +610,7 @@ const Home = () => {
         <div className="relative py-16 w-[90%] mx-auto bg-white">
           {/* ✅ Blur-to-Clear Heading Animation */}
           <motion.h2
-            className="text-center text-3xl lg:text-6xl font-semibold mb-12"
+            className="text-center text-3xl lg:text-6xl font-medium mb-12"
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
@@ -685,7 +694,7 @@ const Home = () => {
         <section className="bg-[#d9ebf4] py-16">
         {/* Heading */}
         <div className="text-center mb-12">
-          <motion.h2 className="text-3xl md:text-6xl font-bold text-gray-900"  initial={{ opacity: 0, filter: "blur(10px)" }}
+          <motion.h2 className="text-3xl md:text-6xl font-medium text-gray-900"  initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}>
@@ -762,7 +771,7 @@ const Home = () => {
               animate="visible"
               exit="exit"
               className="lg:w-1/2 w-full lg:p-8 py-4 flex flex-col justify-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-3xl font-medium text-gray-900 mb-4">
               {slides[current].title}
             </h3>
             <p className="text-gray-600 text-lg mb-6">{slides[current].desc}</p>
@@ -961,14 +970,14 @@ const Home = () => {
         <div className="container mx-auto py-10 px-4 sm:py-16">
           {/* Heading */}
           <div className="max-w-7xl mx-auto text-center mb-12 sm:mb-16">
-            < motion.h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight"
+            < motion.h1 className="text-3xl  md:text-6xl font-medium text-gray-900 mb-4 sm:mb-6 leading-tight"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={headingVariants}>
               See Our Newest <br className="hidden sm:block" /> Projects in Action
             </motion.h1>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md transition-colors duration-300 flex items-center gap-2 mx-auto text-sm sm:text-base">
+            <button onClick={handleClick} className="bg-[#057CC0]  transition-all  transform hover:scale-105   text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md  duration-300 flex items-center gap-2 mx-auto text-sm sm:text-base">
               Explore More Projects
               <span className="text-white text-lg"><FaArrowRight /> </span>
             </button>
@@ -1011,7 +1020,7 @@ const Home = () => {
                       </span>
                     </div>
                     <h3
-                      className={`font-bold text-white leading-tight ${index === items.length - 1
+                      className={`font-medium text-white leading-tight ${index === items.length - 1
                         ? "text-xs sm:text-sm mb-1"
                         : "text-lg sm:text-2xl mb-2 sm:mb-4"
                         }`}
@@ -1056,9 +1065,7 @@ const Home = () => {
             <h2 className="text-3xl lg:text-6xl font-medium text-gray-900">
               happy customers
             </h2>
-          </motion.div>
-
-          {/* Testimonials Container */}
+           </motion.div>
           {/* Testimonials Container */}
           <div className="relative">
             {/* Show 1 card on small, 2 on md+ */}
@@ -1128,7 +1135,7 @@ const Home = () => {
 
         {/* Content */}
         <div className="relative flex flex-col items-center justify-center text-center py-20 px-6 text-white">
-          <motion.h1 className="text-3xl md:text-5xl font-semibold leading-snug max-w-3xl
+          <motion.h1 className="text-3xl md:text-6xl font-medium leading-snug max-w-3xl
           "
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
@@ -1136,12 +1143,12 @@ const Home = () => {
             transition={{ duration: 1, ease: "easeOut" }}>
             Get in touch – find your dream home today!
           </motion.h1>
-          <motion.p className="mt-4 text-gray-200 max-w-xl text-sm md:text-base" variants={fadeUp}
+          <motion.p className="mt-4 text-gray-200 max-w-xl text-base md:text-lg" variants={fadeUp}
             initial="hidden"      
             animate="visible">
             Reach out today to explore top listings, get expert advice, and find your perfect home with ease.
           </motion.p>
-          <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 transition-transform   hover:scale-110 duration-300 flex items-center gap-2 rounded-lg font-medium shadow-lg">
+          <button onClick={handleClick} className="mt-6 px-6 py-3 bg-[#057CC0]  transition-all duration-300 transform hover:scale-105  flex items-center gap-2 rounded-lg font-medium shadow-lg">
             Explore Property 
              <span className="text-white text-lg"><FaArrowRight /> </span>
           </button>
