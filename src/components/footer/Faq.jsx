@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { MdAdd } from "react-icons/md";
+import { RiSubtractLine } from "react-icons/ri";
 
 const faqs = [
   {
@@ -23,6 +25,20 @@ const faqs = [
       "Facilities usually include security, playgrounds, parks, and community spaces."
   }
 ]
+ const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3, // delay between children
+      },
+    },
+  };
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null)
@@ -33,10 +49,16 @@ export default function FAQ() {
 
   return (
     
-    <section className="w-[90%] md:w-[80%] mx-auto py-10 grid grid-cols-1 md:grid-cols-2 mt-10 gap-8">
+    <section  className="container mx-auto">
+      <div className="w-[90%] md:w-[80%] mx-auto py-10 grid grid-cols-1 md:grid-cols-2  gap-8">
       {/* Left Side */}
       <div>
-        <h2 className="text-3xl lg:text-5xl font-semibold mb-4">Frequently Asked <br />Questions</h2>
+        <motion.h2 
+         initial={{ opacity: 0, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-3xl md:text-6xl font-semibold mb-4">Frequently Asked <br />Questions</motion.h2>
         <p className="text-gray-600">
           If there are question you want to ask.<br />
           We will answer all your question.
@@ -46,9 +68,14 @@ export default function FAQ() {
       {/* Right Side */}
       <div className="flex flex-col gap-4">
         {faqs.map((faq, idx) => (
-          <div
+          <motion.div
             key={idx}
             className="border rounded-lg p-4 cursor-pointer shadow-sm"
+            variants={fadeUp}
+             initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+
           >
             {/* Question */}
             <div
@@ -57,7 +84,7 @@ export default function FAQ() {
             >
               <h3 className="font-medium text-gray-800">{faq.question}</h3>
               <span className="text-xl">
-                {openIndex === idx ? "−" : "+"}
+                {openIndex === idx ? <RiSubtractLine/> : <MdAdd />}
               </span>
             </div>
 
@@ -75,9 +102,10 @@ export default function FAQ() {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </ motion.div>
         ))}
       </div>
+    </div>
     </section>
     
   )

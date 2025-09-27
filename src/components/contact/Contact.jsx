@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FaEnvelope } from "react-icons/fa";
 import { HiPhone } from "react-icons/hi";
+import FAQ from '../footer/Faq';
+import { motion, } from "framer-motion";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -19,6 +21,10 @@ export default function ContactForm() {
   const handleSubmit = () => {
     console.log(formData);
   };
+   const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
 
   return (
     <div className="w-full">
@@ -32,13 +38,21 @@ export default function ContactForm() {
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 px-4">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+          <motion.h1 
+          initial={{ opacity: 0, filter: "blur(10px)" }}
+              whileInView={{ opacity: 1, filter: "blur(0px)" }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }}className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
             Get in touch with us!
-          </h1>
-          <p className="text-base md:text-lg text-gray-200 mt-4 max-w-2xl mx-auto">
+          </motion.h1>
+          <motion.p 
+           variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}className="text-base md:text-lg text-gray-200 mt-4 max-w-2xl mx-auto">
             Reach out to us for expert real estate guidance, property inquiries,
             or personalized assistance today.
-          </p>
+          </motion.p>
         </div>
       </div>
 
@@ -154,7 +168,7 @@ export default function ContactForm() {
       </div>
 
 
-      
+     <FAQ/> 
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import React from 'react'
+import { motion, } from "framer-motion";
 
 const Blog = () => {
+  
     const events = [
   {
     id: 1,
@@ -43,6 +45,11 @@ const Blog = () => {
   },
 ];
 
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
   return (
     <div className="w-full">
       {/* Banner Section */}
@@ -55,25 +62,32 @@ const Blog = () => {
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 px-4">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+          <motion.h1
+          initial={{ opacity: 0, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }} className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
             Get in touch with us!
-          </h1>
-          <p className="text-base md:text-lg text-gray-200 mt-4 max-w-2xl mx-auto">
+          </motion.h1>
+          <motion.p
+          variants={fadeUp}
+            initial="hidden"
+            whileInView="visible" className="text-base md:text-lg text-gray-200 mt-4 max-w-2xl mx-auto">
             Reach out to us for expert real estate guidance, property inquiries,
             or personalized assistance today.
-          </p>
+          </motion.p>
         </div>
       </div>
 
       {/* Form Section */}
       <div className="relative -mt-24 md:-mt-28 px-4 z-20 mb-20">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-gray-300 shadow-xs p-8 md:p-12">
+        <div className="max-w-5xl mx-auto  rounded-2xl   shadow-xs ">
           <video
             className="w-full rounded-xl"
             controls
-            poster="https://your-thumbnail-image-link.jpg"
+        
           >
-            <source src="https://your-video-link.mp4" type="video/mp4" />
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -113,6 +127,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
+      
     </div>
   )
 }
