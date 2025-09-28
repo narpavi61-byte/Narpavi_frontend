@@ -87,7 +87,7 @@ const Blog = () => {
             controls
         
           >
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 

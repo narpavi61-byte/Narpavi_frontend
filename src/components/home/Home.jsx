@@ -99,7 +99,7 @@ const Home = () => {
   // home section
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const bannerImages = [Bg, about1, Bg];
+  const bannerImages = [Bg, "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80", Bg];
 
 
   useEffect(() => {
@@ -579,14 +579,14 @@ const Home = () => {
         </div>
 
         {/* ✅ Scrolling Images Section (unchanged) */}
-        <div className="relative w-full overflow-x-hidden mt-10">
+        <div className="relative  overflow-x-hidden mt-10">
           <motion.div
-            className="flex gap-4 p-6 w-max"
+            className="flex gap-4 p-6 w-full"
             animate={{ x: ["0%", "-50%"] }} // continuous scrolling effect
             transition={{
               repeat: Infinity,
               repeatType: "loop",
-              duration: 50,
+              duration: 20,
               ease: "linear",
             }}
           >
@@ -595,10 +595,10 @@ const Home = () => {
                 key={i}
                 src={image}
                 alt={`about-${i}`}
-                className={`object-cover w-full sm:w-[48%] md:w-[23%] hover:scale-105 transition-transform duration-300 rounded-2xl
+                className={`object-cover w-[48%] md:w-[23%] hover:scale-105 transition-transform duration-300 rounded-2xl
               ${i % 4 === 1 || i % 4 === 3
-                    ? "h-72 sm:h-96 md:h-96"
-                    : "h-60 sm:h-80 md:h-80"
+                    ? "h-72 md:h-96"
+                    : "h-60 md:h-80"
                   }`}
               />
             ))}
@@ -706,11 +706,11 @@ const Home = () => {
         <div className="flex justify-center mb-16">
           <div className="relative flex items-center p-[5px] gap-10 md:gap-20">
             {/* Gray dotted line background */}
-            <div className="absolute top-7 left-[48px] right-[48px] border-t-2 border-dotted border-gray-400 z-0"></div>
+            <div className="absolute top-6 md:top-7 left-[48px] right-[48px] border-t-2 border-dotted border-gray-400 z-0"></div>
 
             {/* Solid highlight line (animated slowly) */}
             <div
-              className="absolute top-7 left-[48px] h-0.5 bg-sky-500 z-0 transition-all duration-[1500ms] ease-in-out"
+              className="absolute top-6 md:top-7 left-[48px] h-0.5 bg-sky-500 z-0 transition-all duration-[1500ms] ease-in-out"
               style={{
                 width: `calc(${current} / ${steps.length - 1} * (100% - 96px))`,
               }}
@@ -724,16 +724,16 @@ const Home = () => {
                 {/* Icon Circle */}
                 <motion.div
                 
-                  className={`w-14 h-14 rounded-full flex items-center justify-center shadow-md transition-all duration-500
+                  className={`md:w-14 md:h-14 w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-md transition-all duration-500
             ${idx <= current ? "bg-sky-500 text-white scale-110" : "bg-white text-gray-800"}`}
                   onClick={() => setCurrent(idx)}
                 >
-                  <span className="text-2xl">{step.icon}</span>
+                  <span className=" text-xl md:text-2xl">{step.icon}</span>
                 </motion.div>
 
                 {/* Label */}
                 <p
-                  className={`mt-3 h-14 text-sm font-medium transition-colors duration-500 ${idx <= current ? "text-sky-600" : "text-gray-800"
+                  className={`mt-3 h-14 md:text-sm text-xs font-medium transition-colors duration-500 ${idx <= current ? "text-sky-600" : "text-gray-800"
                     }`}
                 >
                   {step.label}
