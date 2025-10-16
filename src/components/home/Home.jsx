@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Bg from "../../assets/homeImg/Hero.png"
+import Bg2 from "../../assets/homeImg/Hero2.jpg"
+import Bg3 from "../../assets/homeImg/hero3.jpg"
 import overlay from "../../assets/homeImg/Overlay.png"
-import about1 from "../../assets/homeImg/about1.png"
-import about2 from "../../assets/homeImg/about2.png"
+import about1 from "../../assets/homeImg/about1.jpg"
+import about2 from "../../assets/homeImg/about2.jpg"
 import about3 from "../../assets/homeImg/about3.png"
 import about4 from "../../assets/homeImg/about4.png"
+import about5 from "../../assets/homeImg/about5.png"
 import icon1 from '../../assets/logo/icon1.png'
 import icon2 from '../../assets/logo/icon2.png'
 import icon3 from '../../assets/logo/icon3.png'
@@ -99,7 +102,7 @@ const Home = () => {
   // home section
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const bannerImages = [Bg, "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80", Bg];
+  const bannerImages = [Bg, Bg2, Bg3];
 
 
   useEffect(() => {
@@ -110,74 +113,75 @@ const Home = () => {
   }, []);
 
   // about section
-  const img = [about1, about2, about3, about4];
+  const img = [about1, about2, about3, about4, about5];
   const features = [
     {
       icon: icon1,
       title: "Expert Guidance",
-      desc: "Find homes by filtering for bidding wars and recent market price updates to make informed buying decisions easily.",
+      desc: "At Narpavi Properties, our experienced team helps you make the right real estate decisions. From property selection to final registration, we guide you through every step with honest advice and clear communication.",
     },
     {
       icon: icon2,
       title: "Premium Property Selection",
-      desc: "Find homes by filtering for bidding wars and recent market price updates to make informed buying decisions easily.",
+      desc: "We offer a handpicked collection of premium homes, plots, and commercial spaces in prime locations. Every property we list is verified and chosen to give you the best value for your investment.",
     },
     {
       icon: icon3,
       title: "Stress-Free Process",
-      desc: "Find homes by filtering for bidding wars and recent market price updates to make informed buying decisions easily.",
+      desc: "Buying or selling a property can be complicated — but with Narpavi Properties, it’s smooth and worry-free. We handle all the paperwork and coordination so you can focus on your next move with peace of mind.",
     },
     {
       icon: icon4,
       title: "Proven Track Record",
-      desc: "Find homes by filtering for bidding wars and recent market price updates to make informed buying decisions easily.",
+      desc: "Our satisfied clients and successful deals speak for our reliability. Narpavi Properties has built a strong reputation for trust, transparency, and timely service in the real estate market.",
     },
   ];
 
-  const slides = [
-    {
-      title: "Find the perfect house",
-      desc: "Find your perfect home with personalized searches, expert guidance, and seamless viewings—all tailored to your dream lifestyle and budget.",
-      points: [
-        "Handpicked homes matching your needs",
-        "Expert guidance every step of the buying journey",
-        "Seamless process from search to closing",
-      ],
-      img: "https://images.unsplash.com/photo-1600585154526-990dced4db0d",
-    },
-    {
-      title: "Your dream apartment",
-      desc: "Explore modern apartments in prime locations with world-class amenities, curated for comfort and convenience.",
-      points: [
-        "Prime city locations",
-        "Modern interiors and layouts",
-        "Exclusive community features",
-      ],
-      img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
-    },
-    {
-      title: "Luxury villas for you",
-      desc: "Indulge in spacious villas designed for elegance, privacy, and luxury living with seamless purchase options.",
-      points: [
-        "Spacious villas with private gardens",
-        "Secure and peaceful neighborhoods",
-        "Premium lifestyle and comfort",
-      ],
-      img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
-    },
-    {
-      title: " for you",
-      desc: "Indulge in spacious villas designed for elegance, privacy, and luxury living with seamless purchase options.",
-      points: [
-        "Spacious villas with private gardens",
-        "Secure and peaceful neighborhoods",
-        "Premium lifestyle and comfort",
-      ],
-      img: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
-    },
-  ];
+ const slides = [
+  {
+    title: "Discover Your Ideal Plot",
+    desc: "Explore a wide range of verified plots across prime locations, curated to match your budget and purpose — from residential to investment opportunities.",
+    points: [
+      "Handpicked plots with complete verification",
+      "Prime locations with future growth potential",
+      "Detailed insights and transparent pricing",
+    ],
+    img: "https://ik.imagekit.io/zpswxfgjd/medium-shot-blurry-couple-indoors.jpg?updatedAt=1760589247877", // open land image
+  },
+  {
+    title: "Schedule a Site Visit",
+    desc: "Book a convenient site visit and experience your chosen property firsthand. Walk through the land, assess surroundings, and get complete clarity before you buy.",
+    points: [
+      "Flexible visit scheduling as per your availability",
+      "On-site expert guidance and assistance",
+      "Clear boundary markings and layout plans",
+    ],
+    img: "https://ik.imagekit.io/zpswxfgjd/real-estate-agents-visiting-building.jpg ", 
+  },
+  {
+    title: "Hassle-Free Purchase Process",
+    desc: "We make land buying simple and secure. From documentation to payment, everything is handled smoothly with complete transparency.",
+    points: [
+      "Simple documentation and ownership transfer",
+      "Secure payment and registration support",
+      "Dedicated experts for end-to-end assistance",
+    ],
+    img: "https://ik.imagekit.io/zpswxfgjd/serious-businessman-businesswoman-signing-contract.jpg?updatedAt=1760589291770", // transaction/land image
+  },
+  {
+    title: "Guaranteed Value & Buyback Assurance",
+    desc: "Invest with confidence knowing your property value is backed by trusted developers and a guaranteed buyback option for peace of mind.",
+    points: [
+      "Buyback assurance for qualified properties",
+      "Excellent appreciation and resale potential",
+      "Trustworthy developers and clear titles",
+    ],
+    img: "https://ik.imagekit.io/zpswxfgjd/realtor-agent-giving-key-apartment-new-owner.jpg?updatedAt=1760589281984", // gated layout / premium land image
+  },
+];
+
   const steps = [
-    { icon: <PiHouseLine />, label: "Discover House" },
+    { icon: <PiHouseLine />, label: "Discover Plot" },
     { icon: <IoCalendarClearOutline />, label: "Schedule to Visit" },
     { icon: <PiWallet />, label: "Hassle-Free Purchase" },
     { icon: <PiFire />, label: "Buyback Guarantee" },
@@ -194,35 +198,36 @@ const Home = () => {
   };
 
   const projects = [
-    {
-      id: 1,
-      title: "Royal Skyline Premium Hotel",
-      category: "Commercial Building",
-      size: "25,642 SQ.FT",
-      img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600", // replace with your image
-    },
-    {
-      id: 2,
-      title: "Horizon View Commercial",
-      category: "Apartment",
-      size: "18,200 SQ.FT",
-      img: "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=600",
-    },
-    {
-      id: 3,
-      title: "Crest Mansion Shopping",
-      category: "Resort & Hospitality",
-      size: "25,600 SQ.FT",
-      img: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=600",
-    },
-    {
-      id: 4,
-      title: "Bowl Skyline Residential",
-      category: "Apartment and Condo",
-      size: "19,200 SQ.FT",
-      img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600",
-    },
-  ];
+  {
+    id: 1,
+    title: "Singhvi Emerald",
+    category: "Plots",
+    size: "19,200 SQ.FT",
+    img: "https://ik.imagekit.io/zpswxfgjd/projects4.jpg", // open land / plots
+  },
+  {
+    id: 2,
+    title: "Chengalpattu Plots",
+    category: "Villa Plots",
+    size: "1,095 to 1,800 SQ.FT",
+    img: "https://ik.imagekit.io/zpswxfgjd/2.jpg", 
+  },
+  {
+    id: 3,
+    title: "Hill View Plots & Villas",
+    category: "Plots",
+    size: "5,000 SQ.FT",
+    img: "https://ik.imagekit.io/zpswxfgjd/1.jpg", // hill / nature landscape
+  },
+  {
+    id: 4,
+    title: "ECR Plots",
+    category: "Plots and Villas",
+    size: "8,000 SQ.FT",
+    img: "https://ik.imagekit.io/zpswxfgjd/8.jpg", // coastal / villa image
+  },
+];
+
 
   const [items, setItems] = useState(projects);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -316,49 +321,49 @@ const Home = () => {
 
   // testimonial card
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Valentine Alsgnar",
-      role: "CTO Plumbing HVAC Guest",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b332e234?w=50&h=50&fit=crop&crop=face&facepad=2.5",
-      rating: 4.5,
-      review: "It has been an absolute pleaseworking with Havenly. The team went aboveyond to be us execute on our vision always ensured that we were satisfied.",
-      company: "The Grand Haven",
-      location: "1200 Queen Street West - Toronto"
-    },
-    {
-      id: 2,
-      name: "Valentine ",
-      role: "CTO Plumbing HVAC Guest",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face&facepad=2.5",
-      rating: 4.5,
-      review: "It has been an absolute pleaseworking with Havenly. The team went aboveyond to be us execute on our vision always ensured that we were satisfied.",
-      company: "The Grand Haven",
-      location: "1200 Queen Street West - Toronto"
-    },
-    {
-      id: 3,
-      name: "V Alsgnar",
-      role: "CTO Plumbing HVAC Guest",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face&facepad=2.5",
-      rating: 4.5,
-      review: "It has been an absolute pleaseworking with Havenly. The team went aboveyond to be us execute on our vision always ensured that we were satisfied.",
-      company: "The Grand Haven",
-      location: "1200 Queen Street West - Toronto"
-    },
-    {
-      id: 3,
-      name: "gnar",
-      role: "CTO Plumbing HVAC Guest",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face&facepad=2.5",
-      rating: 4.5,
-      review: "It has been an absolute pleaseworking with Havenly. The team went aboveyond to be us execute on our vision always ensured that we were satisfied.",
-      company: "The Grand Haven",
-      location: "1200 Queen Street West - Toronto"
-    }
+ const testimonials = [
+  {
+    id: 1,
+    name: "Suresh Kumar",
+    role: "Home Buyer",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b332e234?w=50&h=50&fit=crop&crop=face&facepad=2.5",
+    rating: 4,
+    review: "Narpavi Properties helped me find my dream home. The team was friendly, patient, and guided me through every step. I’m really happy with their service!",
+    company: "Narpavi Properties",
+    location: "Chengalpattu, Tamil Nadu"
+  },
+  {
+    id: 2,
+    name: "Priya Ramesh",
+    role: "Property Investor",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face&facepad=2.5",
+    rating: 4.5,
+    review: "The experience with Narpavi Properties was smooth and transparent. They provided all the details clearly and helped me make a smart investment.",
+    company: "Narpavi Properties",
+    location: "ECR,Chennai, Tamil Nadu"
+  },
+  {
+    id: 3,
+    name: "Arun Raj",
+    role: "Apartment Buyer",
+    image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=50&h=50&fit=crop&crop=face&facepad=2.5",
+    rating: 5,
+    review: "Very professional and trustworthy team. They delivered what they promised and made the entire process easy for me and my family.",
+    company: "Narpavi Properties",
+    location: "Chennai, Tamil Nadu"
+  },
+  {
+    id: 4,
+    name: "Divya Lakshmi",
+    role: "First-time Buyer",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=50&h=50&fit=crop&crop=face&facepad=2.5",
+    rating: 4.5,
+    review: "As a first-time home buyer, I was nervous at first, but the Narpavi team made it simple and stress-free. Highly recommend them!",
+    company: "Narpavi Properties",
+    location: "Villupuram, Tamil Nadu"
+  }
+];
 
-  ];
   const StarRating = ({ rating }) => {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 !== 0;
@@ -544,12 +549,7 @@ const Home = () => {
             >
               {/* Paragraph animation */}
               <motion.p className="text-base md:text-lg" variants={fadeUp}>
-                Perumnas cluster housing is the right choice for those of you who are looking
-                for comfortable, safe and affordable housing. With the cluster concept, you
-                can enjoy the privacy and comfort of living in a beautiful and clean
-                environment. Apart from that, you can also enjoy the various facilities
-                provided, such as playgrounds, sports fields, shopping centers, schools, and
-                others.
+                At Narpavi Properties, we specialize in connecting people with their dream homes and profitable investments. With years of expertise in the real estate industry, we offer trusted guidance in buying, selling, and renting residential and commercial properties. Our commitment to transparency, customer satisfaction, and long-term relationships sets us apart in today’s property market.
               </motion.p>
 
               {/* Numbers animation */}
@@ -629,13 +629,15 @@ const Home = () => {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <motion.div
-                className="relative w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-xl"
-                style={{ backgroundImage: `url(${Bg})` }}
+                className="relative w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-xl bg-cover"
+                style={{
+                  backgroundImage: "url('https://ik.imagekit.io/zpswxfgjd/choose4_Iu-bjXDNz?updatedAt=1760528531784')",
+                }}
                 whileHover={{ scale: 1.05 }} // hover zoom
                 transition={{ duration: 0.3 }}
               >
                 <motion.img
-                  src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7"
+                  src=" https://ik.imagekit.io/zpswxfgjd/choose3_KDws8lpoe?updatedAt=1760528342092"
                   alt="Meeting"
                   className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] object-cover absolute top-[30%] -right-[40%] rounded-xl"
                   whileHover={{ scale: 1.08 }}
@@ -691,10 +693,10 @@ const Home = () => {
         </div>
       </section>
       {/* slide section */}
-        <section className="bg-[#d9ebf4] py-16">
+      <section className="bg-[#d9ebf4] py-16">
         {/* Heading */}
         <div className="text-center mb-12">
-          <motion.h2 className="text-3xl md:text-6xl font-medium text-gray-900"  initial={{ opacity: 0, filter: "blur(10px)" }}
+          <motion.h2 className="text-3xl md:text-6xl font-medium text-gray-900" initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}>
@@ -723,7 +725,7 @@ const Home = () => {
               >
                 {/* Icon Circle */}
                 <motion.div
-                
+
                   className={`md:w-14 md:h-14 w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-md transition-all duration-500
             ${idx <= current ? "bg-sky-500 text-white scale-110" : "bg-white text-gray-800"}`}
                   onClick={() => setCurrent(idx)}
@@ -750,12 +752,12 @@ const Home = () => {
         <div className="max-w-5xl mx-auto bg-white p-6 shadow-lg rounded-xl overflow-hidden flex flex-col lg:flex-row transition-all duration-500">
           {/* Image */}
           <motion.div
-              key={slides[current].img}
-              variants={imageVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className="lg:w-1/2 w-full mb-3 lg:mb-0">
+            key={slides[current].img}
+            variants={imageVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="lg:w-1/2 w-full mb-3 lg:mb-0">
             <img
               src={slides[current].img}
               alt={slides[current].title}
@@ -765,12 +767,12 @@ const Home = () => {
 
           {/* Text Content */}
           <motion.div
-              key={slides[current].title}
-              variants={contentVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              className="lg:w-1/2 w-full lg:p-8 py-4 flex flex-col justify-center">
+            key={slides[current].title}
+            variants={contentVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="lg:w-1/2 w-full lg:p-8 py-4 flex flex-col justify-center">
             <h3 className="text-3xl font-medium text-gray-900 mb-4">
               {slides[current].title}
             </h3>
@@ -1065,7 +1067,7 @@ const Home = () => {
             <h2 className="text-3xl lg:text-6xl font-medium text-gray-900">
               happy customers
             </h2>
-           </motion.div>
+          </motion.div>
           {/* Testimonials Container */}
           <div className="relative">
             {/* Show 1 card on small, 2 on md+ */}
@@ -1144,13 +1146,13 @@ const Home = () => {
             Get in touch – find your dream home today!
           </motion.h1>
           <motion.p className="mt-4 text-gray-200 max-w-xl text-base md:text-lg" variants={fadeUp}
-            initial="hidden"      
+            initial="hidden"
             animate="visible">
             Reach out today to explore top listings, get expert advice, and find your perfect home with ease.
           </motion.p>
           <button onClick={handleClick} className="mt-6 px-6 py-3 bg-[#057CC0]  transition-all duration-300 transform hover:scale-105  flex items-center gap-2 rounded-lg font-medium shadow-lg">
-            Explore Property 
-             <span className="text-white text-lg"><FaArrowRight /> </span>
+            Explore Property
+            <span className="text-white text-lg"><FaArrowRight /> </span>
           </button>
         </div>
       </section>

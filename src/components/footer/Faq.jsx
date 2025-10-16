@@ -5,26 +5,38 @@ import { RiSubtractLine } from "react-icons/ri";
 
 const faqs = [
   {
-    question: "What is cluster housing perumnas?",
+    question: "How can I buy land from Narpavi Properties?",
     answer:
-      "Cluster housing perumnas is a housing concept that consists of several houses in a gated cluster. Cluster housing perumnas offers comfortable, secure, and affordable housing with various complete and modern facilities."
+      "You can contact our team or visit our office to see the available plots. Once you select the land, we’ll guide you through the booking and registration process."
   },
   {
-    question: "Where is the location of cluster housing perumnas?",
+    question: "Is the land approved and legally clear?",
     answer:
-      "Cluster housing perumnas are usually located in strategic residential areas, close to public facilities and infrastructure."
+      "Yes, all our plots are approved and have clear legal titles. We provide complete documents for your verification before purchase."
   },
   {
-    question: "How much are the prices and types of houses in cluster housing perumnas?",
+    question: "Do you help with the registration process?",
     answer:
-      "Prices and types vary depending on the project, location, and facilities provided."
+      "Yes, our team will assist you with the registration process and make sure all the paperwork is completed smoothly."
   },
   {
-    question: "What are the facilities provided in cluster housing perumnas?",
+    question: "Can I visit the site before buying?",
     answer:
-      "Facilities usually include security, playgrounds, parks, and community spaces."
-  }
-]
+      "Of course! You can visit the site anytime to see the location and surroundings before making a decision."
+  },
+  {
+    question: "Is loan facility available?",
+    answer:
+      "Yes, we help buyers get housing or land loans from trusted banks and financial institutions."
+  },
+  {
+    question: "Are there any hidden charges?",
+    answer:
+      "No, there are no hidden charges. All costs will be clearly explained before you make any payment."
+  },
+  
+];
+
  const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

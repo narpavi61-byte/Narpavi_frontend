@@ -67,31 +67,27 @@ export default function About() {
   ];
 
   const testimonials = [
-    {
-      name: 'Charlotte Turner',
-      role: 'Founder at Ponix',
-      image: 'https://t3.ftcdn.net/jpg/06/99/46/60/360_F_699466075_DaPTBNlNQTOwwjkOiFEoOvzDV0ByXR9E.jpg',
-      testimonial: 'Exceptional service! They made my home-buying journey easy and stress-free. Every detail was managed professionally, and advice was invaluable. I appreciated their quick responses and dedication. Highly recommend their service!'
-    },
-    {
-      name: 'Michael Rodriguez',
-      role: 'CEO at TechStart',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      testimonial: 'Outstanding experience from start to finish! The team went above and beyond to find the perfect property for our business needs. Their market knowledge and negotiation skills saved us both time and money.'
-    },
-    {
-      name: 'Sarah Johnson',
-      role: 'Marketing Director',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      testimonial: 'Professional, knowledgeable, and genuinely caring team. They understood our unique requirements and delivered exactly what we were looking for. The entire process was transparent and efficient.'
-    },
-    {
-      name: 'David Chen',
-      role: 'Investment Consultant',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      testimonial: 'Incredible attention to detail and customer service. They helped us navigate complex property transactions with ease. Their expertise in the market trends and investment opportunities is unmatched.'
-    }
-  ];
+  {
+    name: 'Rohit kumar',
+    role: 'Home Buyer',
+    image: 'https://ik.imagekit.io/zpswxfgjd/r6_lPO7GoAYN?updatedAt=1760596329493',
+    testimonial: 'Amazing service! Buying my home was easy and stress-free. The team was professional, helpful, and quick to respond. Highly recommend Narpavi Properties!'
+  },
+  {
+    name: 'Suresh Chandran',
+    role: 'Business Owner',
+    image: 'https://ik.imagekit.io/zpswxfgjd/r8__aN7ZMBVh?updatedAt=1760596393262',
+    testimonial: 'Great experience from start to finish! They helped me find the perfect property for my business and guided me throughout the process.'
+  },
+  
+  {
+    name: 'Prakash',
+    role: 'Property Buyer',
+    image: 'https://ik.imagekit.io/zpswxfgjd/C2433T023.JPG',
+    testimonial: 'Excellent attention to detail and guidance. They made property buying easy and helped me make the right decisions.'
+  }
+];
+
 
   const getSocialIcon = (social) => {
     switch (social) {
@@ -152,8 +148,8 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
               className="text-sm sm:text-base md:text-2xl mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
-              Welcome to RealPro, your trusted partner in navigating the dynamic world of
-              real estate. Excellence in helping clients achieve their property goals.
+           Welcome to Narpavi Properties, your trusted partner in real estate. We make buying and selling land simple, transparent, and stress-free for everyone.
+           
             </motion.p>
             <button  onClick={handleClick} className="bg-white text-black px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-3 rounded font-medium hover:bg-gray-100 transition-transform duration-400 hover:scale-110  text-sm sm:text-base md:text-lg">
               Explore Projects
@@ -329,7 +325,7 @@ export default function About() {
 
 
       {/* Our Expert Agents Section */}
-      <div className="md:py-18 py-14 px-4 bg-gray-50">
+      {/* <div className="md:py-18 py-14 px-4 bg-gray-50">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -343,9 +339,9 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
               className="text-3xl md:text-6xl font-medium text-gray-900">Our Expert Agents</motion.h2>
-            {/* <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+            <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300">
               View All Agents
-            </button> */}
+            </button>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -378,7 +374,7 @@ export default function About() {
             ))}
           </div>
         </motion.div>
-      </div>
+      </div> */}
 
 
       {/* Testimonials Section */}

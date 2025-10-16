@@ -37,15 +37,15 @@ const PropertyCard = ({
       </div>
       
       <div className="flex items-center gap-4 text-sm text-gray-600 ">
-        <div className="flex items-center gap-1">
+        {/* <div className="flex items-center gap-1">
           <FaBed size={16} />
           <span>{bedrooms} bd </span>
         </div>
         <div className="flex items-center gap-1 px-2 border-l">
           <FaBath size={16} />
           <span>{bathrooms} bd </span>
-        </div>
-        <div className="flex items-center gap-1 px-2 border-l">
+        </div> */}
+        <div className="flex items-center gap-1 px-2 ">
           <FaRulerCombined size={16} />
           <span>{area}</span>
         </div>
@@ -75,27 +75,26 @@ export default function Project() {
   }, [bannerImages.length]);
 
   const properties = [
-    {
-      id: 1,
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop&crop=center",
-      price: "$786,000",
-      title: "The Grand Haven",
-      address: "1220C Queen Street west - Toronto,ON",
-      bedrooms: 3,
-      bathrooms: 3,
-      area: "760 m"
-    },
-    {
-      id: 2,
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop&crop=center",
-      price: "$786,000",
-      title: "The Grand Haven",
-      address: "1220C Queen Street west - Toronto,ON",
-      bedrooms: 3,
-      bathrooms: 3,
-      area: "760 m"
-    }
-  ];
+  {
+    id: 1,
+    image: "https://ik.imagekit.io/zpswxfgjd/90%20(2).jpeg?updatedAt=1760599067678", // replace with actual Sanghvi Emerald image
+    price: "₹1,25,00,000",
+    title: "Sanghvi Emerald",
+    address: "Chennai Tamilnadu",
+    type: "Residential Plot",
+    area: "19,200 sq.ft"
+  },
+  {
+    id: 2,
+    image: "https://ik.imagekit.io/zpswxfgjd/project2.jpg?updatedAt=1760528893778", // from your previous project
+    price: "₹95,00,000",
+    title: "Chengalpattu Villa Plots",
+    address: "Chengalpattu, Tamil Nadu",
+    type: "Villa Plots",
+    area: "1,095 to 1,800 sq.ft"
+  }
+];
+
    const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -181,11 +180,11 @@ export default function Project() {
               <PropertyCard
                 key={property.id}
                 image={property.image}
-                price={property.price}
+                // price={property.price}
                 title={property.title}
                 address={property.address}
-                bedrooms={property.bedrooms}
-                bathrooms={property.bathrooms}
+                // bedrooms={property.bedrooms}
+                // bathrooms={property.bathrooms}
                 area={property.area}
               />
             ))}

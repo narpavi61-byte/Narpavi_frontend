@@ -3,47 +3,48 @@ import { motion, } from "framer-motion";
 
 const Blog = () => {
   
-    const events = [
+ const events = [
   {
     id: 1,
-    title: "Lorem",
+    title: "Sanghvi Emerald Site Visit",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    img: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800&auto=format&fit=crop",
+      "Clients visited the Sanghvi Emerald site to explore the available plots and villas. Our team guided them through the property layout and amenities.",
+    img: "https://ik.imagekit.io/zpswxfgjd/C2413T01.JPG",
   },
   {
     id: 2,
-    title: "Lorem",
+    title: "Client Interaction Session",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    img: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800&auto=format&fit=crop",
+      "We organized a special session for our clients to answer questions, explain payment options, and showcase property plans at Sanghvi Emerald.",
+    img: "https://ik.imagekit.io/zpswxfgjd/C2409T01.JPG",
   },
   {
     id: 3,
-    title: "Lorem",
+    title: "Property Tour Event",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    img: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800&auto=format&fit=crop",
+      "A guided tour was arranged for prospective buyers to walk through the plots and villas at Sanghvi Emerald and experience the location first-hand.",
+    img: "https://ik.imagekit.io/zpswxfgjd/C2406T01.JPG",
   },
   {
     id: 4,
-    title: "Lorem",
-    description: "Another event description goes here.",
-    img: "https://images.unsplash.com/photo-1531988042231-d39a9cc12a9a?q=80&w=800&auto=format&fit=crop",
+    title: "Investment Opportunity Seminar",
+    description: "We hosted a seminar to explain the investment potential of Sanghvi Emerald properties and future growth prospects.",
+    img: "https://ik.imagekit.io/zpswxfgjd/C2402T01.JPG",
   },
   {
     id: 5,
-    title: "Lorem",
-    description: "Another event description goes here.",
-    img: "https://images.unsplash.com/photo-1515165562835-c3b8e3fc7a1a?q=80&w=800&auto=format&fit=crop",
+    title: "Open House Event",
+    description: "Clients were invited for an open house to view available plots and villas, ask questions, and finalize bookings with our team.",
+    img: "https://ik.imagekit.io/zpswxfgjd/C2444T01.JPG?updatedAt=1760605241574",
   },
   {
     id: 6,
-    title: "Lorem",
-    description: "Another event description goes here.",
-    img: "https://images.unsplash.com/photo-1520975922076-13d6d2222b66?q=80&w=800&auto=format&fit=crop",
+    title: "Property Showcase Day",
+    description: "We showcased Sanghvi Emerald’s key plots, villa layouts, and amenities to interested buyers, providing a complete property experience.",
+    img: "https://ik.imagekit.io/zpswxfgjd/C2439T01.JPG",
   },
 ];
+
 
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
@@ -81,24 +82,23 @@ const Blog = () => {
 
       {/* Form Section */}
       <div className="relative -mt-24 md:-mt-28 px-4 z-20 mb-20">
-        <div className="max-w-5xl mx-auto  rounded-2xl   shadow-xs ">
+        <div className="max-w-5xl mx-auto  rounded-2xl pb-5   shadow-xs ">
           <video
             className="w-full rounded-xl"
             controls
         
           >
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dsvkiwxrk/video/upload/v1760604777/DJI_20250928103748_0003_D_SEP28_1_ohqxbe.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          {/* <img src="https://ik.imagekit.io/zpswxfgjd/3d-electric-car-building.jpg?updatedAt=1760528895369" className='p-5 w-full rounded-4xl' alt="" /> */}
 
-          <h2 className="text-2xl font-semibold text-center mt-6">
-            What is cluster housing perumnas?
-          </h2>
-          <p className="text-gray-600 text-center mt-2">
-            Cluster housing perumnas is a housing concept that consists of several
-            houses in a gated cluster. Cluster housing perumnas offers comfortable,
-            secure, and affordable housing with various complete and modern facilities.
-          </p>
+         <h2 className="text-2xl font-semibold text-center mt-6">
+  What is Cluster Housing by Narpavi Properties?
+</h2>
+<p className="text-gray-600 text-center mt-2">
+  Cluster housing means a group of houses built together in a safe, gated area. Narpavi Properties makes these homes comfortable, secure, and affordable, with modern facilities for families.
+</p>
         </div>
       </div>
 
