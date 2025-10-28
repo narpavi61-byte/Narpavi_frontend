@@ -47,9 +47,8 @@ export default function Project() {
 
   // banner images (unchanged)
   const bannerImages = [
-    'https://static.vecteezy.com/system/resources/previews/017/508/529/non_2x/construction-real-estate-contractor-concept-residential-house-building-drawings-free-photo.jpg',
-    'https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg',
-    'https://static1.squarespace.com/static/5491b846e4b07a0c1fb4d840/t/66eb34ce16f23a1c722839ba/1726690510472/Denver+custom+home+opt.jpg?format=1500w',
+    'https://ik.imagekit.io/zpswxfgjd/A-look-into-south-Indian-traditional-homes-and-interior-decor-FB-1200x700-compressed.jpg?updatedAt=1761661300049',
+    'https://ik.imagekit.io/zpswxfgjd/street-ordinary-catalan-town.jpg?updatedAt=1761658564767',
     'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg'
   ];
 
@@ -64,13 +63,14 @@ export default function Project() {
 
   // --- Completed Projects (your supplied 14 items) ---
   const completedProjects = [
-    {
+   
+     {
       id: 1,
-      image: "https://ik.imagekit.io/zpswxfgjd/padmavathi%20nagar.jpg?updatedAt=1761631182580",
-      price: "₹1,25,00,000",
-      title: "Padamavathi Nagar",
-      address: "Chengalpattu, Tamil Nadu",
-      area: "19,200 sq.ft"
+      image: "https://ik.imagekit.io/zpswxfgjd/caotsel%20crest.jpg",
+      price: "₹3,60,00,000",
+      title: "Coastal Crest",
+      address: "ECR, Tamil Nadu",
+      area: "3,800 sq.ft"
     },
     {
       id: 2,
@@ -160,14 +160,15 @@ export default function Project() {
       address: "Avadi, Tamil Nadu",
       area: "1,500 sq.ft"
     },
-    {
+     {
       id: 13,
-      image: "https://ik.imagekit.io/zpswxfgjd/caotsel%20crest.jpg",
-      price: "₹3,60,00,000",
-      title: "Coastal Crest",
-      address: "ECR, Tamil Nadu",
-      area: "3,800 sq.ft"
+      image: "https://ik.imagekit.io/zpswxfgjd/padmavathi%20nagar.jpg?updatedAt=1761631182580",
+      price: "₹1,25,00,000",
+      title: "Padamavathi Nagar",
+      address: "Chengalpattu, Tamil Nadu",
+      area: "19,200 sq.ft"
     },
+   
     {
       id: 14,
       image: "https://ik.imagekit.io/zpswxfgjd/90%20(2).jpeg?updatedAt=1760599067678",
@@ -222,8 +223,8 @@ export default function Project() {
       id: 5,
       image: "https://ik.imagekit.io/zpswxfgjd/jewel.jpg?updatedAt=1761632973739",
       price: "",
-      title: "The Jewel City PH - II",
-      address: "Padappai, Tamil Nadu [ongoing]",
+      title: "The Jewel City PH - II [ongoing]",
+      address: "Padappai, Tamil Nadu ",
       area: "9,200 sq.ft",
 
     },
@@ -296,7 +297,7 @@ export default function Project() {
   return (
     <div className=" bg-white">
 
-      <div className="relative h-[60vh] sm:h-[80vh] md:h-screen overflow-hidden">
+      <div className="relative h-[60vh] sm:h-[80vh] md:h-screen  overflow-hidden">
         {bannerImages.map((image, index) => (
           <div
             key={index}
@@ -392,8 +393,6 @@ export default function Project() {
                 />
               ))}
             </div>
-
-            {/* Arrows (functionality only) */}
             <button
               onClick={handlePrev}
               aria-label="Previous"
@@ -402,7 +401,6 @@ export default function Project() {
             >
               <FaChevronLeft className="text-gray-700" />
             </button>
-
             <button
               onClick={handleNext}
               aria-label="Next"

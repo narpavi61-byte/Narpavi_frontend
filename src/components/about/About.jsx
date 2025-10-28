@@ -30,10 +30,10 @@ export default function About() {
 
   // Random property images for banner rotation
   const bannerImages = [
-    'https://static.vecteezy.com/system/resources/previews/017/508/529/non_2x/construction-real-estate-contractor-concept-residential-house-building-drawings-free-photo.jpg',
-    'https://www.livehome3d.com/assets/img/social/how-to-design-a-house.jpg',
-    'https://static1.squarespace.com/static/5491b846e4b07a0c1fb4d840/t/66eb34ce16f23a1c722839ba/1726690510472/Denver+custom+home+opt.jpg?format=1500w',
-    'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg'
+    'https://ik.imagekit.io/zpswxfgjd/traditional-house-interior-design.jpg?updatedAt=1761658096494',
+    'https://ik.imagekit.io/zpswxfgjd/facade-historical-beautiful-building-liberty-palace-brazil.jpg?updatedAt=1761659435167',
+    'https://ik.imagekit.io/zpswxfgjd/street-ordinary-catalan-town.jpg?updatedAt=1761658564767',
+
   ];
 
   // Auto-rotate banner images
@@ -67,26 +67,26 @@ export default function About() {
   ];
 
   const testimonials = [
-  {
-    name: 'Rohit kumar',
-    role: 'Home Buyer',
-    image: 'https://ik.imagekit.io/zpswxfgjd/r6_lPO7GoAYN?updatedAt=1760596329493',
-    testimonial: 'Amazing service! Buying my home was easy and stress-free. The team was professional, helpful, and quick to respond. Highly recommend Narpavi Properties!'
-  },
-  {
-    name: 'Suresh Chandran',
-    role: 'Business Owner',
-    image: 'https://ik.imagekit.io/zpswxfgjd/r8__aN7ZMBVh?updatedAt=1760596393262',
-    testimonial: 'Great experience from start to finish! They helped me find the perfect property for my business and guided me throughout the process.'
-  },
-  
-  {
-    name: 'Prakash',
-    role: 'Property Buyer',
-    image: 'https://ik.imagekit.io/zpswxfgjd/C2433T023.JPG',
-    testimonial: 'Excellent attention to detail and guidance. They made property buying easy and helped me make the right decisions.'
-  }
-];
+    {
+      name: 'Rohit kumar',
+      role: 'Home Buyer',
+      image: 'https://ik.imagekit.io/zpswxfgjd/r6_lPO7GoAYN?updatedAt=1760596329493',
+      testimonial: 'Amazing service! Buying my home was easy and stress-free. The team was professional, helpful, and quick to respond. Highly recommend Narpavi Properties!'
+    },
+    {
+      name: 'Suresh Chandran',
+      role: 'Business Owner',
+      image: 'https://ik.imagekit.io/zpswxfgjd/r8__aN7ZMBVh?updatedAt=1760596393262',
+      testimonial: 'Great experience from start to finish! They helped me find the perfect property for my business and guided me throughout the process.'
+    },
+
+    {
+      name: 'Prakash',
+      role: 'Property Buyer',
+      image: 'https://ik.imagekit.io/zpswxfgjd/C2433T023.JPG',
+      testimonial: 'Excellent attention to detail and guidance. They made property buying easy and helped me make the right decisions.'
+    }
+  ];
 
 
   const getSocialIcon = (social) => {
@@ -148,10 +148,10 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
               className="text-sm sm:text-base md:text-2xl mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
-           Welcome to Narpavi Properties, your trusted partner in real estate. We make buying and selling land simple, transparent, and stress-free for everyone.
-           
+              Welcome to Narpavi Properties, your trusted partner in real estate. We make buying and selling land simple, transparent, and stress-free for everyone.
+
             </motion.p>
-            <button  onClick={handleClick} className="bg-white text-black px-5 py-2 sm:px-6 sm:py-3 md:px-8 md:py-3 rounded font-medium hover:bg-gray-100 transition-transform duration-400 hover:scale-110  text-sm sm:text-base md:text-lg">
+            <button onClick={handleClick} className="px-6 py-3 sm:px-8 sm:py-4 bg-white text-gray-800 font-semibold rounded-xl cursor-pointer">
               Explore Projects
             </button>
           </div>
@@ -230,7 +230,7 @@ export default function About() {
             {/* Right Image */}
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://ik.imagekit.io/zpswxfgjd/hq720.jpg?updatedAt=1761661300145"
                 alt="Modern Property"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
@@ -246,7 +246,7 @@ export default function About() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }} className="grid md:grid-cols-3 gap-8">
+            viewport={{ once: true }} className="grid md:grid-cols-3 text-center md:text-left gap-8">
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
               <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+100</h3>
               <p className="text-gray-600 md:text-lg">Units Ready</p>
@@ -276,14 +276,14 @@ export default function About() {
           </motion.h2>
         </div>
 
-        <motion.div 
-        variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }} className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Our Mission */}
           <div
-            
+
             className="text-center p-8 rounded-xl" style={{ backgroundColor: '#D4E8F3' }}>
             <div className="w-16 h-16 bg-[#176B9B] rounded-full flex items-center justify-center mx-auto mb-6">
               <FaBullseye className="text-white w-8 h-8" />
@@ -299,20 +299,20 @@ export default function About() {
 
           {/* Our Vision */}
           <div
-             className="text-center p-8 rounded-xl" style={{ backgroundColor: '#D4E8F3' }}>
+            className="text-center p-8 rounded-xl" style={{ backgroundColor: '#D4E8F3' }}>
             <div className="w-16 h-16 bg-[#176B9B] rounded-full flex items-center justify-center mx-auto mb-6">
               <FaEye className="text-white w-8 h-8" />
             </div>
-            <motion.h3 
-            initial={{ opacity: 0, filter: "blur(10px)" }}
-            whileInView={{ opacity: 1, filter: "blur(0px)" }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }} className="text-2xl font-medium text-gray-900 mb-4">Our Vision</motion.h3>
-            <motion.p 
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}className="text-gray-700 leading-relaxed">
+            <motion.h3
+              initial={{ opacity: 0, filter: "blur(10px)" }}
+              whileInView={{ opacity: 1, filter: "blur(0px)" }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }} className="text-2xl font-medium text-gray-900 mb-4">Our Vision</motion.h3>
+            <motion.p
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }} className="text-gray-700 leading-relaxed">
               Transform the real estate industry by setting new
               standards of excellence, sustainability, and satisfaction.
               Recognized as a pioneer in providing personalized,
@@ -378,19 +378,19 @@ export default function About() {
 
 
       {/* Testimonials Section */}
-      <motion.div 
-      variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }} className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8 md:mb-12">
             <motion.h2
-            initial={{ opacity: 0, filter: "blur(10px)" }}
-            whileInView={{ opacity: 1, filter: "blur(0px)" }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }} className="text-3xl  md:text-6xl font-medium text-gray-900 text-center md:text-left mb-6 md:mb-0">
+              initial={{ opacity: 0, filter: "blur(10px)" }}
+              whileInView={{ opacity: 1, filter: "blur(0px)" }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: "easeOut" }} className="text-3xl  md:text-6xl font-medium text-gray-900 text-center md:text-left mb-6 md:mb-0">
               Trusted Real Estate Clients
             </motion.h2>
 
@@ -411,8 +411,8 @@ export default function About() {
           </div>
 
           {/* Content Grid */}
-          <div 
-          className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 lg:gap-16 bg-[#EEF9FF] rounded-2xl items-center">
+          <div
+            className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 lg:gap-16 bg-[#EEF9FF] rounded-2xl items-center">
             {/* Left - Image */}
             <div className="relative flex ">
               <img

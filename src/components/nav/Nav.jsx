@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { Link, useLocation } from 'react-router-dom'; // ✅ useLocation for active links
-import logo from "../../assets/logo/Logo.png";
+import logo from "../../assets/logo/Logo2.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 h-20 z-30 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-[#428c99CC] backdrop-blur-md shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 h-20 z-30 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-white/60 backdrop-blur-md shadow-lg' : 'bg-white/50'
         }`}
     >
       <div className="container mx-auto relative">
@@ -82,7 +82,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-6">
             <Link
               to="/contact"
-              className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/contact') ? 'text-blue-300' : 'text-white hover:text-blue-200'
+              className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/contact') ? 'text-[#057CC0]' : 'text-gray-800 '
                 }`}
             >
               Contact Us
@@ -93,7 +93,7 @@ export default function Navbar() {
             </Link>
             <Link
               to="/about"
-              className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/about') ? 'text-blue-300' : 'text-white hover:text-blue-200'
+              className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/about') ? 'text-[#057CC0]' : 'text-gray-800 h'
                 }`}
             >
               About Us
@@ -122,8 +122,8 @@ export default function Navbar() {
                 key={path}
                 to={path}
                 className={`block px-6 py-4 font-medium transition-colors mb-2 duration-200 ${isActive(path)
-                    ? 'bg-blue-50 text-blue-600'
-                    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                  ? 'bg-blue-50 text-blue-600'
+                  : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
                   }`}
                 onClick={toggleMenu}
               >

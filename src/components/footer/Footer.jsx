@@ -7,7 +7,7 @@ const Footer = () => {
   const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
   const [message, setMessage] = useState('');
 
-  const whatsappNumber = '+919043031050';
+  const whatsappNumber = '918148530406';
 
   const handleSendMessage = () => {
     if (message.trim()) {
@@ -30,9 +30,9 @@ const Footer = () => {
       <footer className="bg-gray-50 pt-16  p-6">
         <div className="max-w-6xl mx-auto">
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {/* Logo and Tagline */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-1 col-span-2">
               <div className="flex items-center mb-4">
                 <div className="w-20 h-20 flex items-center justify-center rounded">
                   <img src={logo} alt="Company Logo" />
@@ -60,7 +60,6 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li><Link to="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">About us</Link></li>
                 <li><Link to="/blog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Blog</Link></li>
-                <li><Link to="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Customers</Link></li>
                 <li><Link to="/Contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact Us</Link></li>
               </ul>
             </div>
@@ -90,7 +89,7 @@ const Footer = () => {
                 <Link to="/terms" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Terms of Service</Link>
                 <Link to="/policy" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Policy service</Link>
                 <Link to="/cookie-policy" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Cookie Policy</Link>
-                <Link to="/partners" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Partners</Link>
+
               </div>
             </div>
           </div>

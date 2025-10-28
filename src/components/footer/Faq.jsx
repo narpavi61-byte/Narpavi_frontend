@@ -62,7 +62,7 @@ export default function FAQ() {
   return (
     
     <section  className="container mx-auto">
-      <div className="w-[90%] md:w-[80%] mx-auto py-10 grid grid-cols-1 md:grid-cols-2  gap-8">
+      <div className="w-[90%] md:w-[80%] mx-auto py-10 grid grid-cols-1 lg:grid-cols-2  gap-8">
       {/* Left Side */}
       <div>
         <motion.h2 
@@ -70,8 +70,8 @@ export default function FAQ() {
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-3xl md:text-6xl font-medium mb-4">Frequently Asked <br />Questions</motion.h2>
-        <p className="text-gray-600">
+            className="text-3xl md:text-6xl text-center lg:text-left font-medium mb-4">Frequently Asked <br />Questions</motion.h2>
+        <p className="text-gray-600 text-center lg:text-left">
           If there are question you want to ask.<br />
           We will answer all your question.
         </p>

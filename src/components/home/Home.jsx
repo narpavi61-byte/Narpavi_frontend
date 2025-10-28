@@ -102,7 +102,7 @@ const Home = () => {
   // home section
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const bannerImages = [Bg, Bg2, Bg3];
+  const bannerImages = ["https://ik.imagekit.io/zpswxfgjd/e78caf13864951.5627958ac9beb.jpg?updatedAt=1761671385631", "https://ik.imagekit.io/zpswxfgjd/Indian-Style-Inspired-House-Design-1.jpg?updatedAt=1761671384222", "https://ik.imagekit.io/zpswxfgjd/Best-Exterior-Design-Ideas-for-an-Indian-Home.jpg?updatedAt=1761659422160"]
 
 
   useEffect(() => {
@@ -326,7 +326,7 @@ const Home = () => {
       id: 1,
       name: "Natraj",
       role: "Project Manager",
-      image: "https://ik.imagekit.io/zpswxfgjd/fytjft_izjVuPII9?updatedAt=1761640765787",
+      image: "https://ik.imagekit.io/zpswxfgjd/men1_eTQyMYUuB?updatedAt=1761671675410",
       rating: 4,
       review: "Narpavi Properties helped me find my dream hom e. The team was friendly, patient, and guided me through every step. I’m really happy with their service!",
       company: "Narpavi Properties",
@@ -336,7 +336,7 @@ const Home = () => {
       id: 2,
       name: "meghna",
       role: "Fashion designer",
-      image: "https://ik.imagekit.io/zpswxfgjd/business-concept-portrait-confident-young-businesswoman-keeping-arms-crossed-looking-camera-w.jpg",
+      image: "https://ik.imagekit.io/zpswxfgjd/women1_2mhLc-gd5?updatedAt=1761671441895",
       rating: 4.5,
       review: "The experience with Narpavi Properties was smooth and transparent. They provided all the details clearly and helped me make a smart investment.",
       company: "Narpavi Properties",
@@ -346,7 +346,7 @@ const Home = () => {
       id: 3,
       name: "Arun Raj",
       role: "Apartment Buyer",
-      image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=50&h=50&fit=crop&crop=face&facepad=2.5",
+      image: "https://ik.imagekit.io/zpswxfgjd/360_F_396780640_mO95sH5ITG2sD3RdOd7fh3olapEkupXW.jpg?updatedAt=1761671382554",
       rating: 5,
       review: "Very professional and trustworthy team. They delivered what they promised and made the entire process easy for me and my family.",
       company: "Narpavi Properties",
@@ -356,7 +356,7 @@ const Home = () => {
       id: 4,
       name: "Divya Lakshmi",
       role: "First-time Buyer",
-      image: "https://ik.imagekit.io/zpswxfgjd/img345_I-OjQnAFa?updatedAt=1761640346730",
+      image: "https://ik.imagekit.io/zpswxfgjd/women2_zG8PthIrk?updatedAt=1761671477255",
       rating: 4.5,
       review: "As a first-time home buyer, I was nervous at first, but the Narpavi team made it simple and stress-free. Highly recommend them!",
       company: "Narpavi Properties",
