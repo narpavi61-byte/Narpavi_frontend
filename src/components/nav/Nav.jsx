@@ -122,8 +122,8 @@ export default function Navbar() {
                 key={path}
                 to={path}
                 className={`block px-6 py-4 font-medium transition-colors mb-2 duration-200 ${isActive(path)
-                  ? 'bg-blue-50 text-blue-600'
-                  : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                  ? 'bg-blue-50 text-[#057CC0]'
+                  : 'text-gray-700 hover:bg-blue-50 hover:text-[#057CC0]'
                   }`}
                 onClick={toggleMenu}
               >
