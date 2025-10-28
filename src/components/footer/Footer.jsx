@@ -6,9 +6,9 @@ import logo from "../../assets/logo/Logo2.png";
 const Footer = () => {
   const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
   const [message, setMessage] = useState('');
-  
-  const whatsappNumber = '1234567890';
-  
+
+  const whatsappNumber = '+919043031050';
+
   const handleSendMessage = () => {
     if (message.trim()) {
       const encodedMessage = encodeURIComponent(message);
@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="lg:col-span-1">
               <div className="flex items-center mb-4">
                 <div className="w-20 h-20 flex items-center justify-center rounded">
-                 <img src={logo} alt="Company Logo" />
+                  <img src={logo} alt="Company Logo" />
                 </div>
               </div>
               <div className="text-sm text-gray-600 space-y-1">
@@ -69,16 +69,16 @@ const Footer = () => {
             <div>
               <h3 className="text-sm font-semibold text-gray-900 mb-4">Resources</h3>
               <ul className="space-y-3">
-                <li><Link to="/community" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Community</Link></li>
+                <li><Link to="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Community</Link></li>
                 <li><Link to="/contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</Link></li>
-                <li><Link to="/dpa" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">DPA</Link></li>
-                <li><Link to="/terms" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms of service</Link></li>
+                <li><Link to="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">DPA</Link></li>
+                <li><Link to="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms of service</Link></li>
               </ul>
             </div>
           </div>
-
+          <hr className='border border-gray-200' />
           {/* Bottom Section */}
-          <div className="border-t border-gray-200 pt-8">
+          <div className=" border-gray-200 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
               {/* Copyright */}
               <div className="text-xs text-gray-500 mb-4 md:mb-0">

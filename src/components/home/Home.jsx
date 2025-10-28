@@ -137,48 +137,48 @@ const Home = () => {
     },
   ];
 
- const slides = [
-  {
-    title: "Discover Your Ideal Plot",
-    desc: "Explore a wide range of verified plots across prime locations, curated to match your budget and purpose — from residential to investment opportunities.",
-    points: [
-      "Handpicked plots with complete verification",
-      "Prime locations with future growth potential",
-      "Detailed insights and transparent pricing",
-    ],
-    img: "https://ik.imagekit.io/zpswxfgjd/medium-shot-blurry-couple-indoors.jpg?updatedAt=1760589247877", // open land image
-  },
-  {
-    title: "Schedule a Site Visit",
-    desc: "Book a convenient site visit and experience your chosen property firsthand. Walk through the land, assess surroundings, and get complete clarity before you buy.",
-    points: [
-      "Flexible visit scheduling as per your availability",
-      "On-site expert guidance and assistance",
-      "Clear boundary markings and layout plans",
-    ],
-    img: "https://ik.imagekit.io/zpswxfgjd/real-estate-agents-visiting-building.jpg ", 
-  },
-  {
-    title: "Hassle-Free Purchase Process",
-    desc: "We make land buying simple and secure. From documentation to payment, everything is handled smoothly with complete transparency.",
-    points: [
-      "Simple documentation and ownership transfer",
-      "Secure payment and registration support",
-      "Dedicated experts for end-to-end assistance",
-    ],
-    img: "https://ik.imagekit.io/zpswxfgjd/serious-businessman-businesswoman-signing-contract.jpg?updatedAt=1760589291770", // transaction/land image
-  },
-  {
-    title: "Guaranteed Value & Buyback Assurance",
-    desc: "Invest with confidence knowing your property value is backed by trusted developers and a guaranteed buyback option for peace of mind.",
-    points: [
-      "Buyback assurance for qualified properties",
-      "Excellent appreciation and resale potential",
-      "Trustworthy developers and clear titles",
-    ],
-    img: "https://ik.imagekit.io/zpswxfgjd/realtor-agent-giving-key-apartment-new-owner.jpg?updatedAt=1760589281984", // gated layout / premium land image
-  },
-];
+  const slides = [
+    {
+      title: "Discover Your Ideal Plot",
+      desc: "Explore a wide range of verified plots across prime locations, curated to match your budget and purpose — from residential to investment opportunities.",
+      points: [
+        "Handpicked plots with complete verification",
+        "Prime locations with future growth potential",
+        "Detailed insights and transparent pricing",
+      ],
+      img: "https://ik.imagekit.io/zpswxfgjd/medium-shot-blurry-couple-indoors.jpg?updatedAt=1760589247877", // open land image
+    },
+    {
+      title: "Schedule a Site Visit",
+      desc: "Book a convenient site visit and experience your chosen property firsthand. Walk through the land, assess surroundings, and get complete clarity before you buy.",
+      points: [
+        "Flexible visit scheduling as per your availability",
+        "On-site expert guidance and assistance",
+        "Clear boundary markings and layout plans",
+      ],
+      img: "https://ik.imagekit.io/zpswxfgjd/real-estate-agents-visiting-building.jpg ",
+    },
+    {
+      title: "Hassle-Free Purchase Process",
+      desc: "We make land buying simple and secure. From documentation to payment, everything is handled smoothly with complete transparency.",
+      points: [
+        "Simple documentation and ownership transfer",
+        "Secure payment and registration support",
+        "Dedicated experts for end-to-end assistance",
+      ],
+      img: "https://ik.imagekit.io/zpswxfgjd/serious-businessman-businesswoman-signing-contract.jpg?updatedAt=1760589291770", // transaction/land image
+    },
+    {
+      title: "Guaranteed Value & Buyback Assurance",
+      desc: "Invest with confidence knowing your property value is backed by trusted developers and a guaranteed buyback option for peace of mind.",
+      points: [
+        "Buyback assurance for qualified properties",
+        "Excellent appreciation and resale potential",
+        "Trustworthy developers and clear titles",
+      ],
+      img: "https://ik.imagekit.io/zpswxfgjd/realtor-agent-giving-key-apartment-new-owner.jpg?updatedAt=1760589281984", // gated layout / premium land image
+    },
+  ];
 
   const steps = [
     { icon: <PiHouseLine />, label: "Discover Plot" },
@@ -198,35 +198,35 @@ const Home = () => {
   };
 
   const projects = [
-  {
-    id: 1,
-    title: "Singhvi Emerald",
-    category: "Plots",
-    size: "19,200 SQ.FT",
-    img: "https://ik.imagekit.io/zpswxfgjd/projects4.jpg", // open land / plots
-  },
-  {
-    id: 2,
-    title: "Chengalpattu Plots",
-    category: "Villa Plots",
-    size: "1,095 to 1,800 SQ.FT",
-    img: "https://ik.imagekit.io/zpswxfgjd/2.jpg", 
-  },
-  {
-    id: 3,
-    title: "Hill View Plots & Villas",
-    category: "Plots",
-    size: "5,000 SQ.FT",
-    img: "https://ik.imagekit.io/zpswxfgjd/1.jpg", // hill / nature landscape
-  },
-  {
-    id: 4,
-    title: "ECR Plots",
-    category: "Plots and Villas",
-    size: "8,000 SQ.FT",
-    img: "https://ik.imagekit.io/zpswxfgjd/8.jpg", // coastal / villa image
-  },
-];
+    {
+      id: 1,
+      title: "Singhvi Emerald",
+      category: "Plots",
+      size: "19,200 SQ.FT",
+      img: "https://ik.imagekit.io/zpswxfgjd/projects4.jpg", // open land / plots
+    },
+    {
+      id: 2,
+      title: "Bharathidhasan Nagar",
+      category: "Villa Plots",
+      size: "1,095 to 1,800 SQ.FT",
+      img: "https://ik.imagekit.io/zpswxfgjd/jewel%20city.jpg?updatedAt=1761631076378",
+    },
+    {
+      id: 3,
+      title: "Padamavathi Nagar",
+      category: "Plots",
+      size: "5,000 SQ.FT",
+      img: "https://ik.imagekit.io/zpswxfgjd/padmavathi%20nagar.jpg?updatedAt=1761631182580", // hill / nature landscape
+    },
+    {
+      id: 4,
+      title: "ECR Plots",
+      category: "Plots and Villas",
+      size: "8,000 SQ.FT",
+      img: "https://ik.imagekit.io/zpswxfgjd/8.jpg", // coastal / villa image
+    },
+  ];
 
 
   const [items, setItems] = useState(projects);
@@ -321,48 +321,48 @@ const Home = () => {
 
   // testimonial card
 
- const testimonials = [
-  {
-    id: 1,
-    name: "Suresh Kumar",
-    role: "Home Buyer",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b332e234?w=50&h=50&fit=crop&crop=face&facepad=2.5",
-    rating: 4,
-    review: "Narpavi Properties helped me find my dream home. The team was friendly, patient, and guided me through every step. I’m really happy with their service!",
-    company: "Narpavi Properties",
-    location: "Chengalpattu, Tamil Nadu"
-  },
-  {
-    id: 2,
-    name: "Priya Ramesh",
-    role: "Property Investor",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face&facepad=2.5",
-    rating: 4.5,
-    review: "The experience with Narpavi Properties was smooth and transparent. They provided all the details clearly and helped me make a smart investment.",
-    company: "Narpavi Properties",
-    location: "ECR,Chennai, Tamil Nadu"
-  },
-  {
-    id: 3,
-    name: "Arun Raj",
-    role: "Apartment Buyer",
-    image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=50&h=50&fit=crop&crop=face&facepad=2.5",
-    rating: 5,
-    review: "Very professional and trustworthy team. They delivered what they promised and made the entire process easy for me and my family.",
-    company: "Narpavi Properties",
-    location: "Chennai, Tamil Nadu"
-  },
-  {
-    id: 4,
-    name: "Divya Lakshmi",
-    role: "First-time Buyer",
-    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=50&h=50&fit=crop&crop=face&facepad=2.5",
-    rating: 4.5,
-    review: "As a first-time home buyer, I was nervous at first, but the Narpavi team made it simple and stress-free. Highly recommend them!",
-    company: "Narpavi Properties",
-    location: "Villupuram, Tamil Nadu"
-  }
-];
+  const testimonials = [
+    {
+      id: 1,
+      name: "Natraj",
+      role: "Project Manager",
+      image: "https://ik.imagekit.io/zpswxfgjd/fytjft_izjVuPII9?updatedAt=1761640765787",
+      rating: 4,
+      review: "Narpavi Properties helped me find my dream hom e. The team was friendly, patient, and guided me through every step. I’m really happy with their service!",
+      company: "Narpavi Properties",
+      location: "Chengalpattu, Tamil Nadu"
+    },
+    {
+      id: 2,
+      name: "meghna",
+      role: "Fashion designer",
+      image: "https://ik.imagekit.io/zpswxfgjd/business-concept-portrait-confident-young-businesswoman-keeping-arms-crossed-looking-camera-w.jpg",
+      rating: 4.5,
+      review: "The experience with Narpavi Properties was smooth and transparent. They provided all the details clearly and helped me make a smart investment.",
+      company: "Narpavi Properties",
+      location: "ECR,Chennai, Tamil Nadu"
+    },
+    {
+      id: 3,
+      name: "Arun Raj",
+      role: "Apartment Buyer",
+      image: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=50&h=50&fit=crop&crop=face&facepad=2.5",
+      rating: 5,
+      review: "Very professional and trustworthy team. They delivered what they promised and made the entire process easy for me and my family.",
+      company: "Narpavi Properties",
+      location: "Chennai, Tamil Nadu"
+    },
+    {
+      id: 4,
+      name: "Divya Lakshmi",
+      role: "First-time Buyer",
+      image: "https://ik.imagekit.io/zpswxfgjd/img345_I-OjQnAFa?updatedAt=1761640346730",
+      rating: 4.5,
+      review: "As a first-time home buyer, I was nervous at first, but the Narpavi team made it simple and stress-free. Highly recommend them!",
+      company: "Narpavi Properties",
+      location: "Villupuram, Tamil Nadu"
+    }
+  ];
 
   const StarRating = ({ rating }) => {
     const fullStars = Math.floor(rating);
