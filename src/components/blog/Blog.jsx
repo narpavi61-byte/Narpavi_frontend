@@ -62,12 +62,12 @@ const Blog = () => {
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative z-10 px-4">
+        <div className="relative max-w-3xl z-10 px-4">
           <motion.h1
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }} className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            transition={{ duration: 1, ease: "easeOut" }} className="text-2xl md:text-5xl  font-medium text-white leading-tight">
             Insights, Trends & Stories from the World of Real Estate
           </motion.h1>
           <motion.p

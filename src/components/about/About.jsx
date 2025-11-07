@@ -30,9 +30,9 @@ export default function About() {
 
   // Random property images for banner rotation
   const bannerImages = [
-    'https://ik.imagekit.io/zpswxfgjd/traditional-house-interior-design.jpg?updatedAt=1761658096494',
-    'https://ik.imagekit.io/zpswxfgjd/facade-historical-beautiful-building-liberty-palace-brazil.jpg?updatedAt=1761659435167',
-    'https://ik.imagekit.io/zpswxfgjd/street-ordinary-catalan-town.jpg?updatedAt=1761658564767',
+    'https://ik.imagekit.io/zpswxfgjd/iceland-landscape-beautiful-plains.jpg?updatedAt=1762312057764',
+    'https://ik.imagekit.io/zpswxfgjd/panoramic-shot-agrucultural-field-with-rays-sun-shining-through-clouds.jpg?updatedAt=1762316889238',
+    'https://ik.imagekit.io/zpswxfgjd/aerial-view-rural-landscape-crops-field.jpg?updatedAt=1762317025583',
 
   ];
 
@@ -47,46 +47,49 @@ export default function About() {
 
   const agents = [
     {
-      name: 'Jordan Phillips',
-      role: 'Real Estate Agent',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80',
+      name: 'Naresh kumar',
+      role: 'Software engineer',
+      image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251107-WA0001.jpg?updatedAt=1762532738928',
       socials: ['facebook', 'twitter']
     },
     {
-      name: 'Olivia Harper',
+      name: 'Meena',
       role: 'Property Manager',
-      image: 'https://t3.ftcdn.net/jpg/06/99/46/60/360_F_699466075_DaPTBNlNQTOwwjkOiFEoOvzDV0ByXR9E.jpg',
+      image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251101-WA0008.jpg?updatedAt=1762532738938',
       socials: ['facebook', 'linkedin']
     },
     {
-      name: 'Ethan Harrison',
+      name: 'selvi',
       role: 'Real Estate Broker',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=387&q=80',
+      image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251104-WA0067.jpg?updatedAt=1762532739222',
       socials: ['facebook', 'linkedin']
     }
   ];
 
   const testimonials = [
-    {
-      name: 'Rohit kumar',
-      role: 'Home Buyer',
-      image: 'https://ik.imagekit.io/zpswxfgjd/r6_lPO7GoAYN?updatedAt=1760596329493',
-      testimonial: 'Amazing service! Buying my home was easy and stress-free. The team was professional, helpful, and quick to respond. Highly recommend Narpavi Properties!'
-    },
-    {
-      name: 'Suresh Chandran',
-      role: 'Business Owner',
-      image: 'https://ik.imagekit.io/zpswxfgjd/r8__aN7ZMBVh?updatedAt=1760596393262',
-      testimonial: 'Great experience from start to finish! They helped me find the perfect property for my business and guided me throughout the process.'
-    },
+  {
+    name: 'Rohit Kumar',
+    role: 'Villa Plot Buyer',
+    image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251107-WA0001.jpg?updatedAt=1762532738928',
+    testimonial:
+      'Buying my villa plot through Narpavi Properties was an amazing experience. The team was supportive, honest, and made the entire process completely hassle-free. I’m excited to start building my dream villa soon!'
+  },
+  {
+    name: 'Suresh Chandran',
+    role: 'Business Owner & Investor',
+    image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251101-WA0008.jpg?updatedAt=1762532738938',
+    testimonial:
+      'Narpavi Properties helped me find a premium plot in a great location for both personal use and investment. Their professionalism and clarity throughout the process truly stood out.'
+  },
+  {
+    name: 'Meena',
+    role: 'Land Investor',
+    image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251104-WA0067.jpg?updatedAt=1762532739222',
+    testimonial:
+      'Exceptional service and expert guidance! Narpavi Properties made purchasing my villa plot effortless and provided valuable insights that helped me make a confident investment.'
+  }
+];
 
-    {
-      name: 'Prakash',
-      role: 'Property Buyer',
-      image: 'https://ik.imagekit.io/zpswxfgjd/C2433T023.JPG',
-      testimonial: 'Excellent attention to detail and guidance. They made property buying easy and helped me make the right decisions.'
-    }
-  ];
 
 
   const getSocialIcon = (social) => {
@@ -138,9 +141,9 @@ export default function About() {
               whileInView={{ opacity: 1, filter: "blur(0px)" }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-2xl sm:text-3xl md:text-6xl font-mrdium mb-4 sm:mb-6 leading-snug md:leading-tight">
+              className="text-2xl sm:text-3xl md:text-5xl font-medium mb-4 sm:mb-6 leading-snug md:leading-tight">
               Experience a Seamless Journey<br className="hidden md:block" />
-              to Your Dream Property
+              to Your Dream Villa Plot
             </motion.h1>
             <motion.p
               variants={fadeUp}
@@ -148,7 +151,7 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
               className="text-sm sm:text-base md:text-2xl mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
-              Welcome to Narpavi Properties, your trusted partner in real estate. We make buying and selling land simple, transparent, and stress-free for everyone.
+              Welcome to Narpavi Properties, where premium villa plots meet peace of mind. Discover a seamless way to own land in prime locations with trust and transparency
 
             </motion.p>
             <button onClick={handleClick} className="px-6 py-3 sm:px-8 sm:py-4 bg-white text-gray-800 font-semibold rounded-xl cursor-pointer">
@@ -195,11 +198,13 @@ export default function About() {
                     <FaHome className="text-white w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className=" text-lg md:text-xl font-medium text-gray-900 mb-3">Experiential Living</h3>
-                    <motion.p className="text-gray-600 leading-relaxed"
-                    >
-                      Real estate agencies play a pivotal role in turning this vision into
-                      reality. From listening to clients' specific personal property solutions.
+                    <h3 className="text-lg md:text-xl font-medium text-gray-900 mb-3">
+                      Experiential Living
+                    </h3>
+                    <motion.p className="text-gray-600 leading-relaxed">
+                      At Narpavi Properties, we believe your home begins with the land you choose.
+                      Our premium villa plots are thoughtfully located to offer a perfect blend of
+                      comfort, connectivity, and lifestyle — turning your dream of luxurious living into reality.
                     </motion.p>
                   </div>
                 </motion.div>
@@ -219,8 +224,9 @@ export default function About() {
                   <div>
                     <h3 className="text-xl font-medium text-gray-900 mb-3">Smart Investment</h3>
                     <p className="text-gray-600 leading-relaxed">
-                      Beyond individual dreams, real estate agencies informed decisions, reducing
-                      risks, and maximizing returns through strategy and analysis.
+                      Investing in premium villa plots with Narpavi Properties is not just about owning land —
+                      it’s about securing a high-value asset for your future. Our strategically located plots
+                      promise strong appreciation, ensuring your investment grows with time.
                     </p>
                   </div>
                 </motion.div>
@@ -230,7 +236,7 @@ export default function About() {
             {/* Right Image */}
             <div className="relative">
               <img
-                src="https://ik.imagekit.io/zpswxfgjd/hq720.jpg?updatedAt=1761661300145"
+                src="https://ik.imagekit.io/zpswxfgjd/beautiful-landscape-with-red-pin.jpg?updatedAt=1762318039869"
                 alt="Modern Property"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
@@ -290,10 +296,9 @@ export default function About() {
             </div>
             <h3 className="text-2xl font-medium text-gray-900 mb-4">Our Mission</h3>
             <p className="text-gray-700 leading-relaxed">
-              Create real estate seamless property buying, selling, and
-              leasing experiences through innovative technology and
-              expert guidance.Empower communities by making home
-              ownership and property investment accessible to all.
+              At Narpavi Properties, our mission is to make land ownership simple, reliable,
+              and rewarding for everyone. We strive to help people invest confidently in premium
+              villa plots through expert guidance, trusted service, and a commitment to long-term value.
             </p>
           </div>
 
@@ -307,17 +312,25 @@ export default function About() {
               initial={{ opacity: 0, filter: "blur(10px)" }}
               whileInView={{ opacity: 1, filter: "blur(0px)" }}
               viewport={{ once: true }}
-              transition={{ duration: 1, ease: "easeOut" }} className="text-2xl font-medium text-gray-900 mb-4">Our Vision</motion.h3>
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="text-2xl font-medium text-gray-900 mb-4"
+            >
+              Our Vision
+            </motion.h3>
+
             <motion.p
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }} className="text-gray-700 leading-relaxed">
-              Transform the real estate industry by setting new
-              standards of excellence, sustainability, and satisfaction.
-              Recognized as a pioneer in providing personalized,
-              customer-focused real estate and the services globally.
+              viewport={{ once: true }}
+              className="text-gray-700 leading-relaxed"
+            >
+              To redefine real estate by creating exceptional villa plot communities
+              that inspire modern living and lasting value. Narpavi Properties envisions
+              becoming a trusted name known for quality, innovation, and customer satisfaction
+              in every property we deliver.
             </motion.p>
+
           </div>
         </motion.div>
       </div>

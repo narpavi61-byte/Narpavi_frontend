@@ -102,7 +102,7 @@ const Home = () => {
   // home section
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const bannerImages = ["https://ik.imagekit.io/zpswxfgjd/e78caf13864951.5627958ac9beb.jpg?updatedAt=1761671385631", "https://ik.imagekit.io/zpswxfgjd/Indian-Style-Inspired-House-Design-1.jpg?updatedAt=1761671384222", "https://ik.imagekit.io/zpswxfgjd/Best-Exterior-Design-Ideas-for-an-Indian-Home.jpg?updatedAt=1761659422160"]
+  const bannerImages = ["https://ik.imagekit.io/zpswxfgjd/high-angle-shot-famous-otaki-beach-new-zealand.jpg?updatedAt=1762312074804", "https://ik.imagekit.io/zpswxfgjd/aerial-shot-beautiful-blue-sea-buildings-mallorca-balearic-islands-spain.jpg?updatedAt=1762312066176", "https://ik.imagekit.io/zpswxfgjd/grassy-field-with-house-trees-dutch-polder.jpg?updatedAt=1762312064194"]
 
 
   useEffect(() => {
@@ -114,28 +114,29 @@ const Home = () => {
 
   // about section
   const img = [about1, about2, about3, about4, about5];
-  const features = [
-    {
-      icon: icon1,
-      title: "Expert Guidance",
-      desc: "At Narpavi Properties, our experienced team helps you make the right real estate decisions. From property selection to final registration, we guide you through every step with honest advice and clear communication.",
-    },
-    {
-      icon: icon2,
-      title: "Premium Property Selection",
-      desc: "We offer a handpicked collection of premium homes, plots, and commercial spaces in prime locations. Every property we list is verified and chosen to give you the best value for your investment.",
-    },
-    {
-      icon: icon3,
-      title: "Stress-Free Process",
-      desc: "Buying or selling a property can be complicated — but with Narpavi Properties, it’s smooth and worry-free. We handle all the paperwork and coordination so you can focus on your next move with peace of mind.",
-    },
-    {
-      icon: icon4,
-      title: "Proven Track Record",
-      desc: "Our satisfied clients and successful deals speak for our reliability. Narpavi Properties has built a strong reputation for trust, transparency, and timely service in the real estate market.",
-    },
-  ];
+const features = [
+  {
+    icon: icon1,
+    title: "Expert Land Guidance",
+    desc: "At Narpavi Properties, our expert team helps you choose the perfect villa plot that matches your vision and budget. From site visits to documentation, we guide you at every step with transparency and care.",
+  },
+  {
+    icon: icon2,
+    title: "Premium Villa Plots",
+    desc: "We offer a curated selection of premium villa plots in fast-growing and well-connected locations. Every plot is DTCP/RERA-approved and ready for you to build your dream villa or make a high-value investment.",
+  },
+  {
+    icon: icon3,
+    title: "Hassle-Free Buying Experience",
+    desc: "Purchasing land can be stressful — but with Narpavi Properties, it’s completely seamless. We handle verifications, approvals, and paperwork, ensuring a smooth and worry-free experience for our customers.",
+  },
+  {
+    icon: icon4,
+    title: "Trusted by Happy Plot Owners",
+    desc: "Our satisfied clients and successful villa plot projects speak for our credibility. Narpavi Properties has earned a strong reputation for trust, transparency, and customer-first service in the real estate market.",
+  },
+];
+
 
   const slides = [
     {
@@ -321,48 +322,49 @@ const Home = () => {
 
   // testimonial card
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Natraj",
-      role: "Project Manager",
-      image: "https://ik.imagekit.io/zpswxfgjd/men1_eTQyMYUuB?updatedAt=1761671675410",
-      rating: 4,
-      review: "Narpavi Properties helped me find my dream hom e. The team was friendly, patient, and guided me through every step. I’m really happy with their service!",
-      company: "Narpavi Properties",
-      location: "Chengalpattu, Tamil Nadu"
-    },
-    {
-      id: 2,
-      name: "meghna",
-      role: "Fashion designer",
-      image: "https://ik.imagekit.io/zpswxfgjd/women1_2mhLc-gd5?updatedAt=1761671441895",
-      rating: 4.5,
-      review: "The experience with Narpavi Properties was smooth and transparent. They provided all the details clearly and helped me make a smart investment.",
-      company: "Narpavi Properties",
-      location: "ECR,Chennai, Tamil Nadu"
-    },
-    {
-      id: 3,
-      name: "Arun Raj",
-      role: "Apartment Buyer",
-      image: "https://ik.imagekit.io/zpswxfgjd/360_F_396780640_mO95sH5ITG2sD3RdOd7fh3olapEkupXW.jpg?updatedAt=1761671382554",
-      rating: 5,
-      review: "Very professional and trustworthy team. They delivered what they promised and made the entire process easy for me and my family.",
-      company: "Narpavi Properties",
-      location: "Chennai, Tamil Nadu"
-    },
-    {
-      id: 4,
-      name: "Divya Lakshmi",
-      role: "First-time Buyer",
-      image: "https://ik.imagekit.io/zpswxfgjd/women2_zG8PthIrk?updatedAt=1761671477255",
-      rating: 4.5,
-      review: "As a first-time home buyer, I was nervous at first, but the Narpavi team made it simple and stress-free. Highly recommend them!",
-      company: "Narpavi Properties",
-      location: "Villupuram, Tamil Nadu"
-    }
-  ];
+ const testimonials = [
+  {
+    id: 1,
+    name: "Natraj",
+    role: "Business Owner",
+    image: "https://ik.imagekit.io/zpswxfgjd/men1_eTQyMYUuB?updatedAt=1761671675410",
+    rating: 5,
+    review: "Narpavi Properties made buying my villa plot completely stress-free. They clearly explained every detail and guided me through the process with honesty. I’m now building my dream villa on the land I bought from them!",
+    company: "Narpavi Properties",
+    location: "Chengalpattu, Tamil Nadu"
+  },
+  {
+    id: 2,
+    name: "Meghna",
+    role: "Fashion Designer",
+    image: "https://ik.imagekit.io/zpswxfgjd/women1_2mhLc-gd5?updatedAt=1761671441895",
+    rating: 4.5,
+    review: "The team was professional and very transparent. They helped me find a premium villa plot in a great location and handled all the paperwork quickly. A reliable choice for anyone looking to invest in land.",
+    company: "Narpavi Properties",
+    location: "ECR, Chennai, Tamil Nadu"
+  },
+  {
+    id: 3,
+    name: "Arun Raj",
+    role: "IT Professional",
+    image: "https://ik.imagekit.io/zpswxfgjd/360_F_396780640_mO95sH5ITG2sD3RdOd7fh3olapEkupXW.jpg?updatedAt=1761671382554",
+    rating: 5,
+    review: "I purchased a villa plot from Narpavi Properties and was impressed by their professionalism and transparency. Every detail was handled perfectly, and they kept all their promises. Truly a trustworthy team!",
+    company: "Narpavi Properties",
+    location: "Chennai, Tamil Nadu"
+  },
+  {
+    id: 4,
+    name: "Divya Lakshmi",
+    role: "First-time Land Buyer",
+    image: "https://ik.imagekit.io/zpswxfgjd/women2_zG8PthIrk?updatedAt=1761671477255",
+    rating: 4.5,
+    review: "As a first-time buyer, I was worried about choosing the right plot. But the Narpavi team patiently explained everything and helped me buy a plot in a prime location. I’m very happy with my investment!",
+    company: "Narpavi Properties",
+    location: "Villupuram, Tamil Nadu"
+  }
+];
+
 
   const StarRating = ({ rating }) => {
     const fullStars = Math.floor(rating);
@@ -549,8 +551,9 @@ const Home = () => {
             >
               {/* Paragraph animation */}
               <motion.p className="text-base md:text-lg" variants={fadeUp}>
-                At Narpavi Properties, we specialize in connecting people with their dream homes and profitable investments. With years of expertise in the real estate industry, we offer trusted guidance in buying, selling, and renting residential and commercial properties. Our commitment to transparency, customer satisfaction, and long-term relationships sets us apart in today’s property market.
+                At Narpavi Properties, we specialize in offering premium villa plots that blend luxury, comfort, and value. With deep expertise in the real estate industry, we help our customers find the perfect land to build their dream villas or make secure, high-return investments. Our commitment to transparency, trust, and customer satisfaction has made us a preferred choice for those seeking prime properties in the most promising locations.
               </motion.p>
+
 
               {/* Numbers animation */}
               <motion.div

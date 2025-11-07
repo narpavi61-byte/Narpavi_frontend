@@ -47,9 +47,9 @@ export default function Project() {
 
   // banner images (unchanged)
   const bannerImages = [
-    'https://ik.imagekit.io/zpswxfgjd/A-look-into-south-Indian-traditional-homes-and-interior-decor-FB-1200x700-compressed.jpg?updatedAt=1761661300049',
-    'https://ik.imagekit.io/zpswxfgjd/street-ordinary-catalan-town.jpg?updatedAt=1761658564767',
-    'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg'
+    'https://ik.imagekit.io/zpswxfgjd/panoramic-shot-agrucultural-field-with-rays-sun-shining-through-clouds.jpg?updatedAt=1762316889238',
+    'https://ik.imagekit.io/zpswxfgjd/aerial-shot-beautiful-blue-sea-buildings-mallorca-balearic-islands-spain.jpg?updatedAt=1762312066176',
+    'https://ik.imagekit.io/zpswxfgjd/aerial-view-rural-landscape-crops-field.jpg?updatedAt=1762317025583'
   ];
 
   // Auto-rotate banner images (unchanged)
@@ -63,8 +63,8 @@ export default function Project() {
 
   // --- Completed Projects (your supplied 14 items) ---
   const completedProjects = [
-   
-     {
+
+    {
       id: 1,
       image: "https://ik.imagekit.io/zpswxfgjd/caotsel%20crest.jpg",
       price: "₹3,60,00,000",
@@ -160,7 +160,7 @@ export default function Project() {
       address: "Avadi, Tamil Nadu",
       area: "1,500 sq.ft"
     },
-     {
+    {
       id: 13,
       image: "https://ik.imagekit.io/zpswxfgjd/padmavathi%20nagar.jpg?updatedAt=1761631182580",
       price: "₹1,25,00,000",
@@ -168,7 +168,7 @@ export default function Project() {
       address: "Chengalpattu, Tamil Nadu",
       area: "19,200 sq.ft"
     },
-   
+
     {
       id: 14,
       image: "https://ik.imagekit.io/zpswxfgjd/90%20(2).jpeg?updatedAt=1760599067678",
@@ -322,17 +322,25 @@ export default function Project() {
               initial={{ opacity: 0, filter: "blur(10px)" }}
               whileInView={{ opacity: 1, filter: "blur(0px)" }}
               viewport={{ once: true }}
-              transition={{ duration: 1, ease: "easeOut" }} className="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 sm:mb-6 leading-snug md:leading-tight">
-              Find your perfect <br className="hidden md:block" />
-              home with ease
+              transition={{ duration: 1, ease: "easeOut" }}
+              className="text-2xl sm:text-3xl md:text-6xl font-bold mb-4 sm:mb-6 leading-snug md:leading-tight"
+            >
+              Discover Our Premium <br className="hidden md:block" />
+              Villa Plot Projects
             </motion.h1>
+
             <motion.p
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }} className="text-sm sm:text-base md:text-2xl mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
-              Explore listings and find your perfect home with expert guidance and seamless search.
+              viewport={{ once: true }}
+              className="text-sm sm:text-base md:text-2xl mb-6 sm:mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed"
+            >
+              Explore well-planned villa plot communities designed for comfort,
+              connectivity, and long-term value where every project reflects
+              our promise of quality and trust.
             </motion.p>
+
           </div>
         </div>
 
@@ -360,7 +368,8 @@ export default function Project() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }} className="text-gray-600 max-w-2xl mx-auto">
-              Discover our handpicked selection of premium properties in the most desirable locations.
+              Explore our exclusive collection of premium villa plot developments,
+              thoughtfully located for comfort, growth, and exceptional value.
             </motion.p>
           </div>
 

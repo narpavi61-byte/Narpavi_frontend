@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaWhatsapp, FaTimes, FaPaperPlane } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; // ✅ Import Link
-import logo from "../../assets/logo/Logo2.png";
+import logo from "../../assets/logo/Logo3.png";
 
 const Footer = () => {
   const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);

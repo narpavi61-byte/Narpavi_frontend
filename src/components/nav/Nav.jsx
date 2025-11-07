@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { Link, useLocation } from 'react-router-dom'; // ✅ useLocation for active links
-import logo from "../../assets/logo/Logo2.png";
+import logo from "../../assets/logo/Logo3.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
