@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 h-20 z-30 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-white/60 backdrop-blur-md shadow-lg' : 'bg-white/50'
+      className={`fixed top-0 left-0 right-0 h-20 z-30 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-white/60 backdrop-blur-md shadow-lg' : 'bg-white/50 '
         }`}
     >
       <div className="container mx-auto relative">
@@ -80,17 +80,7 @@ export default function Navbar() {
 
           {/* RIGHT SIDE - LINKS (Desktop) */}
           <div className="hidden lg:flex items-center gap-6">
-            <Link
-              to="/contact"
-              className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/contact') ? 'text-[#057CC0]' : 'text-gray-800 '
-                }`}
-            >
-              Contact Us
-              <span
-                className={`absolute -bottom-1 left-0 h-0.5 bg-blue-200 transition-all duration-300 ${isActive('/contact') ? 'w-full' : 'w-0 group-hover:w-full'
-                  }`}
-              />
-            </Link>
+
             <Link
               to="/about"
               className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/about') ? 'text-[#057CC0]' : 'text-gray-800 h'
@@ -99,6 +89,39 @@ export default function Navbar() {
               About Us
               <span
                 className={`absolute -bottom-1 left-0 h-0.5 bg-blue-200 transition-all duration-300 ${isActive('/about') ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}
+              />
+            </Link>
+            <Link
+              to="/project"
+              className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/project') ? 'text-[#057CC0]' : 'text-gray-800 h'
+                }`}
+            >
+              Portfolio
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 bg-blue-200 transition-all duration-300 ${isActive('/project') ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}
+              />
+            </Link>
+            {/* <Link
+              to="/blog"
+              className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/blog') ? 'text-[#057CC0]' : 'text-gray-800 '
+                }`}
+            >
+              Blog
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 bg-blue-200 transition-all duration-300 ${isActive('/blog') ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}
+              />
+            </Link> */}
+            <Link
+              to="/contact"
+              className={`relative font-medium transition-all duration-200 hover:scale-105 ${isActive('/contact') ? 'text-[#057CC0]' : 'text-gray-800 '
+                }`}
+            >
+              Contact Us
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 bg-blue-200 transition-all duration-300 ${isActive('/contact') ? 'w-full' : 'w-0 group-hover:w-full'
                   }`}
               />
             </Link>

@@ -1,7 +1,44 @@
-import React from 'react'
-import { motion, } from "framer-motion";
+import React, { useRef, useState, useEffect } from "react";
+import { FaPause } from "react-icons/fa6";
+import { FaPlay } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Blog = () => {
+  const videoRef = useRef(null);
+
+  const [loading, setLoading] = useState(true);
+  const [showButton, setShowButton] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const hideTimer = useRef(null);
+
+  // Auto-hide after 2 seconds
+  const startAutoHide = () => {
+    if (hideTimer.current) clearTimeout(hideTimer.current);
+
+    hideTimer.current = setTimeout(() => {
+      if (isPlaying) setShowButton(false);
+    }, 2000);
+  };
+
+  // Show button when mouse moves
+  const handleMouseMove = () => {
+    if (isPlaying) {
+      setShowButton(true);
+      startAutoHide();
+    }
+  };
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      video.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [isPlaying]);
 
   const events = [
     {
@@ -45,7 +82,6 @@ const Blog = () => {
     },
   ];
 
-
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -58,7 +94,7 @@ const Blog = () => {
         className="relative h-[60vh] md:h-[70vh] bg-cover bg-center flex items-center justify-center text-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=2070&q=80')",
+            "url('https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.34_237fb8f1.jpg?updatedAt=1763606642145')",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
@@ -67,40 +103,86 @@ const Blog = () => {
             initial={{ opacity: 0, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut" }} className="text-2xl md:text-5xl  font-medium text-white leading-tight">
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-2xl md:text-5xl font-medium text-white leading-tight"
+          >
             Insights, Trends & Stories from the World of Real Estate
           </motion.h1>
+
           <motion.p
             variants={fadeUp}
             initial="hidden"
-            whileInView="visible" className="text-base md:text-lg text-gray-200 mt-4 max-w-2xl mx-auto">
-            Stay updated with expert opinions, property market trends, lifestyle inspirations, and company news. Discover everything you need to make informed real estate decisions.
+            whileInView="visible"
+            className="text-base md:text-lg text-gray-200 mt-4 max-w-2xl mx-auto"
+          >
+            Stay updated with expert opinions, property market trends, lifestyle inspirations, and company news...
           </motion.p>
         </div>
       </div>
 
       {/* Form Section */}
       <div className="relative -mt-24 md:-mt-28 px-4 z-20 mb-20">
-        <div className="max-w-5xl mx-auto rounded-2xl pb-5 shadow-xs">
-          <video
-            className="w-full rounded-xl"
-            controls
-            poster="https://ik.imagekit.io/zpswxfgjd/3d-electric-car-building.jpg?updatedAt=1760528895369"
-          >
-            <source
-              src="https://res.cloudinary.com/dsvkiwxrk/video/upload/v1760604777/DJI_20250928103748_0003_D_SEP28_1_ohqxbe.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <div className="max-w-5xl mx-auto rounded-2xl pb-5">
+          <div className="relative w-full">
+
+            {/* VIDEO */}
+            <video
+              ref={videoRef}
+              className="w-full rounded-xl"
+              controls
+              poster="https://ik.imagekit.io/zpswxfgjd/3d-electric-car-building.jpg?updatedAt=1760528895369"
+              onCanPlay={() => {
+                setLoading(false);
+                setShowButton(true);
+              }}
+              onWaiting={() => {
+                setLoading(true);
+                setShowButton(false);
+              }}
+              onPlay={() => {
+                setIsPlaying(true);
+                startAutoHide();
+              }}
+              onPause={() => {
+                setIsPlaying(false);
+                setShowButton(true);
+              }}
+            >
+              <source
+                src="https://res.cloudinary.com/dsvkiwxrk/video/upload/v1763625120/Narpavi_Web_video.out_nutubl.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            {/* LOADING SPINNER */}
+            {loading && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+              </div>
+            )}
+
+            {/* PLAY / PAUSE CENTER BUTTON */}
+            {showButton && !loading && (
+              <button
+                onClick={() => {
+                  const video = videoRef.current;
+                  if (video.paused) video.play();
+                  else video.pause();
+                }}
+                className="absolute inset-0 m-auto w-16 h-16 flex items-center justify-center 
+                    bg-black/50 backdrop-blur-md text-white rounded-full text-3xl 
+                    hover:bg-black/60 transition"
+              >
+                {isPlaying ? <FaPause size={22} /> : <FaPlay size={22} />}
+              </button>
+            )}
+          </div>
 
           <h2 className="text-2xl font-semibold text-center mt-6">
             What is Cluster Housing by Narpavi Properties?
           </h2>
           <p className="text-gray-600 text-center mt-2">
-            Cluster housing means a group of houses built together in a safe, gated
-            area. Narpavi Properties makes these homes comfortable, secure, and
-            affordable, with modern facilities for families.
+            Cluster housing means a group of houses built together...
           </p>
         </div>
       </div>
@@ -130,9 +212,8 @@ const Blog = () => {
           </div>
         </div>
       </section>
-
     </div>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

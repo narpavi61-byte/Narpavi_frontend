@@ -47,9 +47,9 @@ export default function Project() {
 
   // banner images (unchanged)
   const bannerImages = [
-    'https://ik.imagekit.io/zpswxfgjd/panoramic-shot-agrucultural-field-with-rays-sun-shining-through-clouds.jpg?updatedAt=1762316889238',
-    'https://ik.imagekit.io/zpswxfgjd/aerial-shot-beautiful-blue-sea-buildings-mallorca-balearic-islands-spain.jpg?updatedAt=1762312066176',
-    'https://ik.imagekit.io/zpswxfgjd/aerial-view-rural-landscape-crops-field.jpg?updatedAt=1762317025583'
+    'https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.33_3a06d5fe.jpg?updatedAt=1763606642543',
+    'https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.33_8c979d5a.jpg?updatedAt=1763606641711',
+    'https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.34_36f8ee33.jpg?updatedAt=1763606643049'
   ];
 
   // Auto-rotate banner images (unchanged)
@@ -66,7 +66,7 @@ export default function Project() {
 
     {
       id: 1,
-      image: "https://ik.imagekit.io/zpswxfgjd/caotsel%20crest.jpg",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.05_03c87993.jpg",
       price: "₹3,60,00,000",
       title: "Coastal Crest",
       address: "ECR, Tamil Nadu",
@@ -74,7 +74,7 @@ export default function Project() {
     },
     {
       id: 2,
-      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202022-02-12%20at%2010.55.49%20PM%20(1).jpeg.jpg?updatedAt=1761631077370",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.04_f149b34a.jpg",
       price: "₹95,00,000",
       title: "Hill View",
       address: "Maraimalai Nagar, Tamil Nadu",
@@ -82,7 +82,7 @@ export default function Project() {
     },
     {
       id: 3,
-      image: "https://ik.imagekit.io/zpswxfgjd/omsakthinagar.jpg?updatedAt=1761631077948",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.02_8765e6e9.jpg",
       price: "₹62,00,000",
       title: "Om Sakthi",
       address: "Singaperumal Koil, Tamil Nadu",
@@ -90,7 +90,7 @@ export default function Project() {
     },
     {
       id: 4,
-      image: "https://ik.imagekit.io/zpswxfgjd/marc%20avenue.jpg?updatedAt=1761631078319",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.03_9d025ea0.jpg",
       price: "₹3,50,00,000",
       title: "Marc Avenue",
       address: "Chengalpattu, Tamil Nadu",
@@ -98,7 +98,7 @@ export default function Project() {
     },
     {
       id: 5,
-      image: "https://ik.imagekit.io/zpswxfgjd/pcr%20avenue.JPG?updatedAt=1761631099206",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.02_f6bda5cb.jpg",
       price: "₹1,10,00,000",
       title: "PCR Avenue",
       address: "Thiruporur, Tamil Nadu",
@@ -106,7 +106,7 @@ export default function Project() {
     },
     {
       id: 6,
-      image: "https://ik.imagekit.io/zpswxfgjd/sudhakar.jpg",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.02_d42d35a0.jpg",
       price: "₹25,00,000",
       title: "Sudhakar Residences",
       address: "Tiger Cave (ECR), Tamil Nadu",
@@ -114,7 +114,7 @@ export default function Project() {
     },
     {
       id: 7,
-      image: "https://ik.imagekit.io/zpswxfgjd/srivari%20.jpg?updatedAt=1761631078348",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.02_1ef89e80.jpg",
       price: "₹2,80,00,000",
       title: "Sei Vari Avenue",
       address: "Padappai, Tamil Nadu",
@@ -122,7 +122,7 @@ export default function Project() {
     },
     {
       id: 8,
-      image: "https://ik.imagekit.io/zpswxfgjd/8.jpg?updatedAt=1760592484017",
+      image: "https://ik.imagekit.io/zpswxfgjd/sb.jpg",
       price: "₹4,20,00,000",
       title: "Swarna Bhoomi",
       address: "Padappai, Tamil Nadu",
@@ -130,7 +130,7 @@ export default function Project() {
     },
     {
       id: 9,
-      image: "https://ik.imagekit.io/zpswxfgjd/jewel%20city.jpg?updatedAt=1761631076378",
+      image: "https://ik.imagekit.io/zpswxfgjd/bd.jpg",
       price: "₹78,00,000",
       title: "Bharathidhasan Nagar",
       address: "Urapakkam (near Padappai), Tamil Nadu",
@@ -138,7 +138,7 @@ export default function Project() {
     },
     {
       id: 10,
-      image: "https://ik.imagekit.io/zpswxfgjd/bharathidassn.jpg?updatedAt=1761632717971",
+      image: "https://ik.imagekit.io/zpswxfgjd/sp.jpg",
       price: "₹2,40,00,000",
       title: "SP Nagar",
       address: "Vandalur, Tamil Nadu",
@@ -146,7 +146,7 @@ export default function Project() {
     },
     {
       id: 11,
-      image: "https://ik.imagekit.io/zpswxfgjd/jewel.jpg",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.05_e1309213.jpg",
       price: "₹1,75,00,000",
       title: "The Jewel City",
       address: "Padappai, Tamil Nadu",
@@ -154,7 +154,7 @@ export default function Project() {
     },
     {
       id: 12,
-      image: "https://ik.imagekit.io/zpswxfgjd/avadi.jpg",
+      image: "https://ik.imagekit.io/zpswxfgjd/chandru.jpg",
       price: "₹85,00,000",
       title: "Chandru Paradise",
       address: "Avadi, Tamil Nadu",
@@ -162,7 +162,7 @@ export default function Project() {
     },
     {
       id: 13,
-      image: "https://ik.imagekit.io/zpswxfgjd/padmavathi%20nagar.jpg?updatedAt=1761631182580",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.03_2f75fe7c.jpg",
       price: "₹1,25,00,000",
       title: "Padamavathi Nagar",
       address: "Chengalpattu, Tamil Nadu",
@@ -171,7 +171,7 @@ export default function Project() {
 
     {
       id: 14,
-      image: "https://ik.imagekit.io/zpswxfgjd/90%20(2).jpeg?updatedAt=1760599067678",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.03_83a853da.jpg",
       price: "₹2,20,00,000",
       title: "Singhvi Emerald",
       address: "Thiruvakkazhukundram, Tamil Nadu",
@@ -183,7 +183,7 @@ export default function Project() {
     // Upcoming items
     {
       id: 1,
-      image: "https://ik.imagekit.io/zpswxfgjd/avadi.jpg?updatedAt=1761632140938",
+      image: "https://ik.imagekit.io/zpswxfgjd/avadi5.jpg",
       price: "",
       title: "Avadi (Upcoming)",
       address: "Avadi, Tamil Nadu",
@@ -192,25 +192,25 @@ export default function Project() {
     },
     {
       id: 2,
-      image: "https://ik.imagekit.io/zpswxfgjd/ecr.jpg?updatedAt=1761631077537",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2017.13.29_a606b47d.jpg",
       price: "",
       title: "OMR Thiruporur (Upcoming)",
       address: "OMR / Thiruporur area, Tamil Nadu",
       area: "2,200 sq.ft",
       status: "upcoming"
     },
+    // {
+    //   id: 3,
+    //   image: "https://ik.imagekit.io/zpswxfgjd/bharathidassn.jpg?updatedAt=1761632717971",
+    //   price: "",
+    //   title: "Kalpakkam (ECR) (Upcoming)",
+    //   address: "Kalpakkam, ECR, Tamil Nadu",
+    //   area: "2,200 sq.ft",
+    //   status: "upcoming"
+    // },
     {
       id: 3,
-      image: "https://ik.imagekit.io/zpswxfgjd/bharathidassn.jpg?updatedAt=1761632717971",
-      price: "",
-      title: "Kalpakkam (ECR) (Upcoming)",
-      address: "Kalpakkam, ECR, Tamil Nadu",
-      area: "2,200 sq.ft",
-      status: "upcoming"
-    },
-    {
-      id: 4,
-      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202022-12-08%20at%2012.05.42%20PM%20(1)_1_.jpg",
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.05_e1309213.jpg",
       price: "",
       title: "The Jewel City PH - III (Upcoming)",
       address: "Padappai / project site, Tamil Nadu",
@@ -220,8 +220,8 @@ export default function Project() {
 
     // Ongoing items (marked explicitly)
     {
-      id: 5,
-      image: "https://ik.imagekit.io/zpswxfgjd/jewel.jpg?updatedAt=1761632973739",
+      id: 4,
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.05_e1309213.jpg",
       price: "",
       title: "The Jewel City PH - II [ongoing]",
       address: "Padappai, Tamil Nadu ",
@@ -229,8 +229,8 @@ export default function Project() {
 
     },
     {
-      id: 6,
-      image: "https://ik.imagekit.io/zpswxfgjd/90%20(2).jpeg?updatedAt=1760599067678",
+      id: 5,
+      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.03_83a853da.jpg",
       price: "",
       title: "Singhvi Emerald [ongoing]",
       address: "Thiruvakkazhukundram, Tamil Nadu",
@@ -353,7 +353,7 @@ export default function Project() {
       </div>
 
 
-      <div className=" container pt-10  mx-auto">
+      <div className=" container pt-10  mx-auto mb-10">
         <div className="w-[90%] mx-auto">
           <div className="text-center mb-6">
             <motion.h2

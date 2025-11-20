@@ -30,9 +30,9 @@ export default function About() {
 
   // Random property images for banner rotation
   const bannerImages = [
-    'https://ik.imagekit.io/zpswxfgjd/iceland-landscape-beautiful-plains.jpg?updatedAt=1762312057764',
-    'https://ik.imagekit.io/zpswxfgjd/panoramic-shot-agrucultural-field-with-rays-sun-shining-through-clouds.jpg?updatedAt=1762316889238',
-    'https://ik.imagekit.io/zpswxfgjd/aerial-view-rural-landscape-crops-field.jpg?updatedAt=1762317025583',
+    'https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.34_36f8ee33.jpg?updatedAt=1763606643049',
+    'https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.33_3a06d5fe.jpg?updatedAt=1763606642543',
+    'https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.34_625cc7ce.jpg?updatedAt=1763606642465',
 
   ];
 
@@ -67,28 +67,28 @@ export default function About() {
   ];
 
   const testimonials = [
-  {
-    name: 'Rohit Kumar',
-    role: 'Villa Plot Buyer',
-    image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251107-WA0001.jpg?updatedAt=1762532738928',
-    testimonial:
-      'Buying my villa plot through Narpavi Properties was an amazing experience. The team was supportive, honest, and made the entire process completely hassle-free. I’m excited to start building my dream villa soon!'
-  },
-  {
-    name: 'Suresh Chandran',
-    role: 'Business Owner & Investor',
-    image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251101-WA0008.jpg?updatedAt=1762532738938',
-    testimonial:
-      'Narpavi Properties helped me find a premium plot in a great location for both personal use and investment. Their professionalism and clarity throughout the process truly stood out.'
-  },
-  {
-    name: 'Meena',
-    role: 'Land Investor',
-    image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251104-WA0067.jpg?updatedAt=1762532739222',
-    testimonial:
-      'Exceptional service and expert guidance! Narpavi Properties made purchasing my villa plot effortless and provided valuable insights that helped me make a confident investment.'
-  }
-];
+    {
+      name: 'Rohit Kumar',
+      role: 'Villa Plot Buyer',
+      image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251107-WA0001.jpg?updatedAt=1762532738928',
+      testimonial:
+        'Buying my villa plot through Narpavi Properties was an amazing experience. The team was supportive, honest, and made the entire process completely hassle-free. I’m excited to start building my dream villa soon!'
+    },
+    {
+      name: 'Suresh Chandran',
+      role: 'Business Owner & Investor',
+      image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251101-WA0008.jpg?updatedAt=1762532738938',
+      testimonial:
+        'Narpavi Properties helped me find a premium plot in a great location for both personal use and investment. Their professionalism and clarity throughout the process truly stood out.'
+    },
+    {
+      name: 'Meena',
+      role: 'Land Investor',
+      image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251104-WA0067.jpg?updatedAt=1762532739222',
+      testimonial:
+        'Exceptional service and expert guidance! Narpavi Properties made purchasing my villa plot effortless and provided valuable insights that helped me make a confident investment.'
+    }
+  ];
 
 
 
@@ -229,7 +229,9 @@ export default function About() {
                       promise strong appreciation, ensuring your investment grows with time.
                     </p>
                   </div>
+
                 </motion.div>
+
               </div>
             </div>
 
@@ -254,15 +256,15 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true }} className="grid md:grid-cols-3 text-center md:text-left gap-8">
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
-              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+100</h3>
+              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+20</h3>
               <p className="text-gray-600 md:text-lg">Units Ready</p>
             </div>
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
-              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+60K</h3>
+              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+2K</h3>
               <p className="text-gray-600 md:text-lg">Customers</p>
             </div>
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
-              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+70K</h3>
+              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+5K</h3>
               <p className="text-gray-600 md:text-lg">Reviews</p>
             </div>
           </motion.div>

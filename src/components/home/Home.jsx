@@ -102,7 +102,7 @@ const Home = () => {
   // home section
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const bannerImages = ["https://ik.imagekit.io/zpswxfgjd/high-angle-shot-famous-otaki-beach-new-zealand.jpg?updatedAt=1762312074804", "https://ik.imagekit.io/zpswxfgjd/aerial-shot-beautiful-blue-sea-buildings-mallorca-balearic-islands-spain.jpg?updatedAt=1762312066176", "https://ik.imagekit.io/zpswxfgjd/grassy-field-with-house-trees-dutch-polder.jpg?updatedAt=1762312064194"]
+  const bannerImages = ["https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.33_8c979d5a.jpg", "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.33_3a06d5fe.jpg", "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.34_625cc7ce.jpg"]
 
 
   useEffect(() => {
@@ -114,28 +114,28 @@ const Home = () => {
 
   // about section
   const img = [about1, about2, about3, about4, about5];
-const features = [
-  {
-    icon: icon1,
-    title: "Expert Land Guidance",
-    desc: "At Narpavi Properties, our expert team helps you choose the perfect villa plot that matches your vision and budget. From site visits to documentation, we guide you at every step with transparency and care.",
-  },
-  {
-    icon: icon2,
-    title: "Premium Villa Plots",
-    desc: "We offer a curated selection of premium villa plots in fast-growing and well-connected locations. Every plot is DTCP/RERA-approved and ready for you to build your dream villa or make a high-value investment.",
-  },
-  {
-    icon: icon3,
-    title: "Hassle-Free Buying Experience",
-    desc: "Purchasing land can be stressful — but with Narpavi Properties, it’s completely seamless. We handle verifications, approvals, and paperwork, ensuring a smooth and worry-free experience for our customers.",
-  },
-  {
-    icon: icon4,
-    title: "Trusted by Happy Plot Owners",
-    desc: "Our satisfied clients and successful villa plot projects speak for our credibility. Narpavi Properties has earned a strong reputation for trust, transparency, and customer-first service in the real estate market.",
-  },
-];
+  const features = [
+    {
+      icon: icon1,
+      title: "Expert Land Guidance",
+      desc: "At Narpavi Properties, our expert team helps you choose the perfect villa plot that matches your vision and budget. From site visits to documentation, we guide you at every step with transparency and care.",
+    },
+    {
+      icon: icon2,
+      title: "Premium Villa Plots",
+      desc: "We offer a curated selection of premium villa plots in fast-growing and well-connected locations. Every plot is DTCP/RERA-approved and ready for you to build your dream villa or make a high-value investment.",
+    },
+    {
+      icon: icon3,
+      title: "Hassle-Free Buying Experience",
+      desc: "Purchasing land can be stressful — but with Narpavi Properties, it’s completely seamless. We handle verifications, approvals, and paperwork, ensuring a smooth and worry-free experience for our customers.",
+    },
+    {
+      icon: icon4,
+      title: "Trusted by Happy Plot Owners",
+      desc: "Our satisfied clients and successful villa plot projects speak for our credibility. Narpavi Properties has earned a strong reputation for trust, transparency, and customer-first service in the real estate market.",
+    },
+  ];
 
 
   const slides = [
@@ -150,33 +150,34 @@ const features = [
       img: "https://ik.imagekit.io/zpswxfgjd/medium-shot-blurry-couple-indoors.jpg?updatedAt=1760589247877", // open land image
     },
     {
-      title: "Schedule a Site Visit",
-      desc: "Book a convenient site visit and experience your chosen property firsthand. Walk through the land, assess surroundings, and get complete clarity before you buy.",
+      title: "Schedule to Visit",
+      desc: "Schedule a convenient site visit to walk the land, inspect the surroundings, and make an informed decision.",
       points: [
-        "Flexible visit scheduling as per your availability",
-        "On-site expert guidance and assistance",
-        "Clear boundary markings and layout plans",
+        "Flexible visit scheduling",
+        "Expert assistance on-site",
+        "Boundary markings & layout clarity",
       ],
       img: "https://ik.imagekit.io/zpswxfgjd/real-estate-agents-visiting-building.jpg ",
     },
     {
-      title: "Hassle-Free Purchase Process",
-      desc: "We make land buying simple and secure. From documentation to payment, everything is handled smoothly with complete transparency.",
+      title: "Bank Loans",
+      desc: "Get seamless assistance for property loans through trusted banking partners for a smooth buying experience.",
       points: [
-        "Simple documentation and ownership transfer",
-        "Secure payment and registration support",
-        "Dedicated experts for end-to-end assistance",
+        "Loan eligibility assistance",
+        "Partnerships with trusted banks",
+        "Simple and guided loan process",
       ],
       img: "https://ik.imagekit.io/zpswxfgjd/serious-businessman-businesswoman-signing-contract.jpg?updatedAt=1760589291770", // transaction/land image
     },
     {
-      title: "Guaranteed Value & Buyback Assurance",
-      desc: "Invest with confidence knowing your property value is backed by trusted developers and a guaranteed buyback option for peace of mind.",
+      title: "Construction",
+      desc: "Start building confidently with expert construction support, from planning to execution of your dream project.",
       points: [
-        "Buyback assurance for qualified properties",
-        "Excellent appreciation and resale potential",
-        "Trustworthy developers and clear titles",
+        "End-to-end construction guidance",
+        "Trusted contractors & planners",
+        "Transparent progress updates",
       ],
+
       img: "https://ik.imagekit.io/zpswxfgjd/realtor-agent-giving-key-apartment-new-owner.jpg?updatedAt=1760589281984", // gated layout / premium land image
     },
   ];
@@ -184,8 +185,8 @@ const features = [
   const steps = [
     { icon: <PiHouseLine />, label: "Discover Plot" },
     { icon: <IoCalendarClearOutline />, label: "Schedule to Visit" },
-    { icon: <PiWallet />, label: "Hassle-Free Purchase" },
-    { icon: <PiFire />, label: "Buyback Guarantee" },
+    { icon: <PiWallet />, label: "Bank Loans" },
+    { icon: <PiFire />, label: "Construction" },
   ];
 
   const [current, setCurrent] = useState(0);
@@ -204,28 +205,28 @@ const features = [
       title: "Singhvi Emerald",
       category: "Plots",
       size: "19,200 SQ.FT",
-      img: "https://ik.imagekit.io/zpswxfgjd/projects4.jpg", // open land / plots
+      img: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.03_83a853da.jpg", // open land / plots
     },
     {
       id: 2,
       title: "Bharathidhasan Nagar",
       category: "Villa Plots",
       size: "1,095 to 1,800 SQ.FT",
-      img: "https://ik.imagekit.io/zpswxfgjd/jewel%20city.jpg?updatedAt=1761631076378",
+      img: "https://ik.imagekit.io/zpswxfgjd/bd.jpg",
     },
     {
       id: 3,
       title: "Padamavathi Nagar",
       category: "Plots",
       size: "5,000 SQ.FT",
-      img: "https://ik.imagekit.io/zpswxfgjd/padmavathi%20nagar.jpg?updatedAt=1761631182580", // hill / nature landscape
+      img: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.03_2f75fe7c.jpg", // hill / nature landscape
     },
     {
       id: 4,
       title: "ECR Plots",
       category: "Plots and Villas",
       size: "8,000 SQ.FT",
-      img: "https://ik.imagekit.io/zpswxfgjd/8.jpg", // coastal / villa image
+      img: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2017.13.29_a606b47d.jpg", // coastal / villa image
     },
   ];
 
@@ -322,48 +323,48 @@ const features = [
 
   // testimonial card
 
- const testimonials = [
-  {
-    id: 1,
-    name: "Natraj",
-    role: "Business Owner",
-    image: "https://ik.imagekit.io/zpswxfgjd/men1_eTQyMYUuB?updatedAt=1761671675410",
-    rating: 5,
-    review: "Narpavi Properties made buying my villa plot completely stress-free. They clearly explained every detail and guided me through the process with honesty. I’m now building my dream villa on the land I bought from them!",
-    company: "Narpavi Properties",
-    location: "Chengalpattu, Tamil Nadu"
-  },
-  {
-    id: 2,
-    name: "Meghna",
-    role: "Fashion Designer",
-    image: "https://ik.imagekit.io/zpswxfgjd/women1_2mhLc-gd5?updatedAt=1761671441895",
-    rating: 4.5,
-    review: "The team was professional and very transparent. They helped me find a premium villa plot in a great location and handled all the paperwork quickly. A reliable choice for anyone looking to invest in land.",
-    company: "Narpavi Properties",
-    location: "ECR, Chennai, Tamil Nadu"
-  },
-  {
-    id: 3,
-    name: "Arun Raj",
-    role: "IT Professional",
-    image: "https://ik.imagekit.io/zpswxfgjd/360_F_396780640_mO95sH5ITG2sD3RdOd7fh3olapEkupXW.jpg?updatedAt=1761671382554",
-    rating: 5,
-    review: "I purchased a villa plot from Narpavi Properties and was impressed by their professionalism and transparency. Every detail was handled perfectly, and they kept all their promises. Truly a trustworthy team!",
-    company: "Narpavi Properties",
-    location: "Chennai, Tamil Nadu"
-  },
-  {
-    id: 4,
-    name: "Divya Lakshmi",
-    role: "First-time Land Buyer",
-    image: "https://ik.imagekit.io/zpswxfgjd/women2_zG8PthIrk?updatedAt=1761671477255",
-    rating: 4.5,
-    review: "As a first-time buyer, I was worried about choosing the right plot. But the Narpavi team patiently explained everything and helped me buy a plot in a prime location. I’m very happy with my investment!",
-    company: "Narpavi Properties",
-    location: "Villupuram, Tamil Nadu"
-  }
-];
+  const testimonials = [
+    {
+      id: 1,
+      name: "Natraj",
+      role: "Business Owner",
+      image: "https://ik.imagekit.io/zpswxfgjd/men1_eTQyMYUuB?updatedAt=1761671675410",
+      rating: 5,
+      review: "Narpavi Properties made buying my villa plot completely stress-free. They clearly explained every detail and guided me through the process with honesty. I’m now building my dream villa on the land I bought from them!",
+      company: "Narpavi Properties",
+      location: "Chengalpattu, Tamil Nadu"
+    },
+    {
+      id: 2,
+      name: "Meghna",
+      role: "Fashion Designer",
+      image: "https://ik.imagekit.io/zpswxfgjd/women1_2mhLc-gd5?updatedAt=1761671441895",
+      rating: 4.5,
+      review: "The team was professional and very transparent. They helped me find a premium villa plot in a great location and handled all the paperwork quickly. A reliable choice for anyone looking to invest in land.",
+      company: "Narpavi Properties",
+      location: "ECR, Chennai, Tamil Nadu"
+    },
+    {
+      id: 3,
+      name: "Arun Raj",
+      role: "IT Professional",
+      image: "https://ik.imagekit.io/zpswxfgjd/360_F_396780640_mO95sH5ITG2sD3RdOd7fh3olapEkupXW.jpg?updatedAt=1761671382554",
+      rating: 5,
+      review: "I purchased a villa plot from Narpavi Properties and was impressed by their professionalism and transparency. Every detail was handled perfectly, and they kept all their promises. Truly a trustworthy team!",
+      company: "Narpavi Properties",
+      location: "Chennai, Tamil Nadu"
+    },
+    {
+      id: 4,
+      name: "Divya Lakshmi",
+      role: "First-time Land Buyer",
+      image: "https://ik.imagekit.io/zpswxfgjd/women2_zG8PthIrk?updatedAt=1761671477255",
+      rating: 4.5,
+      review: "As a first-time buyer, I was worried about choosing the right plot. But the Narpavi team patiently explained everything and helped me buy a plot in a prime location. I’m very happy with my investment!",
+      company: "Narpavi Properties",
+      location: "Villupuram, Tamil Nadu"
+    }
+  ];
 
 
   const StarRating = ({ rating }) => {
@@ -485,7 +486,7 @@ const features = [
             animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            Building Dreams, <br /> Creating Landmarks
+            Nilam + Nambikai = Narpavi
           </motion.h1>
 
           {/* Paragraph */}
@@ -561,9 +562,9 @@ const features = [
                 variants={containerVariants}
               >
                 {[
-                  { value: "+100", label: "Units ready" },
-                  { value: "+60k", label: "Customers" },
-                  { value: "+70k", label: "Review" },
+                  { value: "+20", label: "Units ready" },
+                  { value: "+2k", label: "Customers" },
+                  { value: "+5k", label: "Review" },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
@@ -1001,8 +1002,8 @@ const features = [
                   ${getCardClass(index)}
                   w-[90%] sm:w-[45%] md:w-[30%] lg:w-[22%] 
                   ${index === 3
-                      ? 'h-72 sm:h-80 md:h-96 lg:h-[25rem]' // Fourth card has reduced height on large screens
-                      : 'h-72 sm:h-80 md:h-96 lg:h-[28rem]' // Other cards maintain full height
+                      ? 'h-72 sm:h-80 md:h-96 lg:h-[25rem]' 
+                      : 'h-72 sm:h-80 md:h-96 lg:h-[28rem]' 
                     }
                 `}
                   style={{
@@ -1041,12 +1042,12 @@ const features = [
             </div>
 
             {/* Controls */}
-            <button
+            {/* <button
               onClick={handleNext}
               className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 sm:p-3 rounded-full transition-all duration-500 border border-white/20"
             >
 
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -1125,7 +1126,8 @@ const features = [
 
 
       <FAQ />
-      <section className="relative w-full max-w-6xl mx-auto rounded-2xl overflow-hidden mt-10">
+
+      <section className="relative w-full max-w-6xl mx-auto rounded-2xl overflow-hidden mt-10 mb-10">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -1159,6 +1161,37 @@ const features = [
           </button>
         </div>
       </section>
+      <div className="w-full flex flex-col items-center justify-center py-12 px-4 bg-[#057CC0]">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3 tracking-wide">
+          Find Us on the Map
+        </h2>
+        <p className="text-slate-300 mb-8 text-center max-w-xl">
+          Visit Narpavi Properties – we're easy to locate and always happy to assist!
+        </p>
+
+        {/* Map Wrapper */}
+        <div className="
+    w-full max-w-4xl 
+    rounded-3xl overflow-hidden shadow-2xl relative
+    bg-white/10 backdrop-blur-lg border border-white/20
+    transition-all duration-300 hover:scale-[1.02] hover:shadow-3xl
+  ">
+          <iframe
+            title="Narpavi Properties map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15559.471190466198!2d80.0813307!3d12.8518142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52614e14812405%3A0xff3c8325268e25f4!2sNARPAVI%20PROPERTIES!5e0!3m2!1sen!2sin!4v1763617482927!5m2!1sen!2sin"
+            className="w-full h-[300px] md:h-[450px]"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+
+
+      </div>
+
+
     </div>
   )
 }

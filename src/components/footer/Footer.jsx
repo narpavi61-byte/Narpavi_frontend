@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { FaWhatsapp, FaTimes, FaPaperPlane } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // ✅ Import Link
+import { Link } from 'react-router-dom';
 import logo from "../../assets/logo/logo3.png";
+import { MdOutlinePhone } from "react-icons/md";
+import { MdMailOutline } from "react-icons/md";
+import { GrLocation } from "react-icons/gr";
 
 const Footer = () => {
   const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
   const [message, setMessage] = useState('');
 
-  const whatsappNumber = '918148530406';
+  const whatsappNumber = '919043031050';
 
   const handleSendMessage = () => {
     if (message.trim()) {
@@ -29,50 +32,86 @@ const Footer = () => {
     <>
       <footer className="bg-gray-50 pt-16  p-6">
         <div className="max-w-6xl mx-auto">
-          {/* Main Footer Content */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-            {/* Logo and Tagline */}
+          <div className="w-20 h-20 flex items-center justify-center rounded">
+            <img src={logo} alt="Company Logo" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
             <div className="lg:col-span-1 col-span-2">
-              <div className="flex items-center mb-4">
-                <div className="w-20 h-20 flex items-center justify-center rounded">
-                  <img src={logo} alt="Company Logo" />
-                </div>
+              <div className="flex items-center ">
+
               </div>
-              <div className="text-sm text-gray-600 space-y-1">
-                <p>More Comfortable.</p>
-                <p>More Classy.</p>
+              <div className="text-sm font-semibold text-gray-600 space-y-1">
+
+                <p>Nilam + Nambikai = Narpavi</p>
+
+              </div>
+              <div className="mt-4 flex flex-col space-y-2">
+
+                <div className='flex items-center gap-2 '>
+                  < MdOutlinePhone className='text-2xl text-[#057CC0]' />
+                  <a
+                    href="tel:+919043031050"
+                    className="text-sm  text-gray-600 hover:underline"
+                  >
+                    +91 90430 31050
+                  </a>
+                </div>
+
+                <div className='flex  items-center  gap-1'>
+                  <MdMailOutline className='text-2xl text-[#057CC0]' />
+                  <a
+                    href="mailto:narpaviproperties@gmail.com"
+                    className="text-sm  text-gray-600 hover:underline"
+                  >
+                    narpaviproperties@gmail.com
+                  </a>
+                </div>
+                <div className='flex items-start gap-2'>
+                  < GrLocation className='text-2xl text-[#057CC0]' />
+                  <p className="text-sm  text-gray-600 leading-relaxed">
+                    No.8, 67, Varalakshmi Nagar,<br className='hidden lg:block' />
+                    Maduravoyal Chennai,  600095,<br />
+
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Product Column */}
-            <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Product</h3>
-              <ul className="space-y-3">
-                <li><Link to="/project" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</Link></li>
-                <li><Link to="/project" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Integrations</Link></li>
-                <li><Link to="/project" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</Link></li>
-              </ul>
+            <div className=' flex flex-col lg:items-center  '>
+              <div>
+                <h3 className="text-sm font-semibold text-gray-900 mb-4">Product</h3>
+                <ul className="space-y-3">
+                  <li><Link to="/project" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Features</Link></li>
+                  <li><Link to="/project" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Integrations</Link></li>
+                  <li><Link to="/project" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Pricing</Link></li>
+                </ul>
+              </div>
             </div>
 
             {/* Company Column */}
-            <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Company</h3>
-              <ul className="space-y-3">
-                <li><Link to="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">About us</Link></li>
-                <li><Link to="/blog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Blog</Link></li>
-                <li><Link to="/Contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact Us</Link></li>
-              </ul>
+            <div className='flex flex-col lg:items-center '>
+              <div className=''>
+                <h3 className="text-sm font-semibold text-gray-900 mb-4">Company</h3>
+                <ul className="space-y-3">
+                  <li><Link to="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">About us</Link></li>
+                  <li><Link to="/blog" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Blog</Link></li>
+                  <li><Link to="/Contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact Us</Link></li>
+                </ul>
+              </div>
             </div>
 
             {/* Resources Column */}
-            <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Resources</h3>
-              <ul className="space-y-3">
-                <li><Link to="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Community</Link></li>
-                <li><Link to="/contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</Link></li>
-                <li><Link to="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">DPA</Link></li>
-                <li><Link to="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms of service</Link></li>
-              </ul>
+            <div className='flex flex-col lg:items-center '>
+              <div>
+                <h3 className="text-sm font-semibold text-gray-900 mb-4">Resources</h3>
+                <ul className="space-y-3">
+                  <li><Link to="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Community</Link></li>
+                  <li><Link to="/contact" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Contact</Link></li>
+                  <li><Link to="/about" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">DPA</Link></li>
+                  <li><Link to="/" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">Terms of service</Link></li>
+                </ul>
+              </div>
             </div>
           </div>
           <hr className='border border-gray-200' />
@@ -86,9 +125,9 @@ const Footer = () => {
 
               {/* Bottom Links */}
               <div className="flex flex-wrap gap-6">
-                <Link to="/terms" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Terms of Service</Link>
-                <Link to="/policy" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Policy service</Link>
-                <Link to="/cookie-policy" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Cookie Policy</Link>
+                <Link to="/" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Terms of Service</Link>
+                <Link to="/about" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Policy service</Link>
+                <Link to="/contact" className="text-xs text-gray-500 hover:text-gray-700 transition-colors">Cookie Policy</Link>
 
               </div>
             </div>

@@ -24,7 +24,7 @@ export default function ContactForm() {
 
     const text = `📩 *New Property Enquiry*\n\n👤 Name: ${firstName} ${lastName}\n📧 Email: ${email}\n📞 Phone: ${phone}\n💬 Message: ${message}`;
     const encodedText = encodeURIComponent(text);
-    const whatsappURL = `https://wa.me/918148530406?text=${encodedText}`;
+    const whatsappURL = `https://wa.me/919043031050?text=${encodedText}`;
     window.open(whatsappURL, "_blank");
   };
 
@@ -40,7 +40,7 @@ export default function ContactForm() {
         className="relative h-[60vh] md:h-[70vh] bg-cover bg-center flex items-center justify-center text-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=2070&q=80')",
+            "url('https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-12%20at%2023.27.34_36f8ee33.jpg?updatedAt=1763606643049')",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
@@ -167,7 +167,12 @@ export default function ContactForm() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Our Email</p>
-                    <p className="font-semibold text-sm md:text-base text-gray-700">infooo@narpaviproperties.com</p>
+                    <a
+                      href="mailto:narpaviproperties@gmail.com"
+                      className="font-semibold text-sm md:text-base text-gray-700 hover:underline"
+                    >
+                      narpaviproperties@gmail.com
+                    </a>
                   </div>
                 </div>
 
@@ -177,8 +182,8 @@ export default function ContactForm() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Phone Number</p>
-                    <a href="tel:+91908069908" className="font-semibold text-gray-700 hover:text-blue-600 transition">
-                      +91 908069908
+                    <a href="tel:+919043031050" className="font-semibold text-gray-700 hover:text-blue-600 transition">
+                      +91 9043031050
                     </a>
                   </div>
                 </div>
@@ -188,7 +193,39 @@ export default function ContactForm() {
         </form>
       </div>
 
+
+
       <FAQ />
+
+      <div className="w-full flex flex-col items-center justify-center py-12 px-4 bg-[#057CC0]">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-semibold text-white mb-3 tracking-wide">
+          Find Us on the Map
+        </h2>
+        <p className="text-slate-300 mb-8 text-center max-w-xl">
+          Visit Narpavi Properties – we're easy to locate and always happy to assist!
+        </p>
+
+        {/* Map Wrapper */}
+        <div className="
+    w-full max-w-4xl 
+    rounded-3xl overflow-hidden shadow-2xl relative
+    bg-white/10 backdrop-blur-lg border border-white/20
+    transition-all duration-300 hover:scale-[1.02] hover:shadow-3xl
+  ">
+          <iframe
+            title="Narpavi Properties map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15559.471190466198!2d80.0813307!3d12.8518142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52614e14812405%3A0xff3c8325268e25f4!2sNARPAVI%20PROPERTIES!5e0!3m2!1sen!2sin!4v1763617482927!5m2!1sen!2sin"
+            className="w-full h-[300px] md:h-[450px]"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+
+
+      </div>
     </div>
   );
 }
