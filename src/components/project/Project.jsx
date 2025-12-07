@@ -32,12 +32,12 @@ const PropertyCard = ({
         </p>
       </div>
 
-      <div className="flex items-center gap-4 text-sm text-gray-600 ">
+      {/* <div className="flex items-center gap-4 text-sm text-gray-600 ">
         <div className="flex items-center gap-1 px-2 ">
           <FaRulerCombined size={16} />
           <span>{area}</span>
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 );
@@ -397,7 +397,7 @@ export default function Project() {
                   image={property.image}
                   title={property.title}
                   address={property.address}
-                  area={property.area}
+                  // area={property.area}
 
                 />
               ))}
