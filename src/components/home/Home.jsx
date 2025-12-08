@@ -562,7 +562,7 @@ const Home = () => {
                 variants={containerVariants}
               >
                 {[
-                  { value: "+20", label: "Units ready" },
+                  { value: "+15", label: "Projects" },
                   { value: "+2k", label: "Customers" },
                   { value: "+5k", label: "Review" },
                 ].map((item, index) => (

@@ -84,7 +84,7 @@ export default function About() {
     {
       name: 'Meena',
       role: 'Land Investor',
-      image: 'https://ik.imagekit.io/zpswxfgjd/IMG-20251104-WA0067.jpg?updatedAt=1762532739222',
+      image: 'https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-12-07%20at%2023.34.23_ed0c619d.jpg',
       testimonial:
         'Exceptional service and expert guidance! Narpavi Properties made purchasing my villa plot effortless and provided valuable insights that helped me make a confident investment.'
     }
@@ -256,8 +256,8 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true }} className="grid md:grid-cols-3 text-center md:text-left gap-8">
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
-              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+20</h3>
-              <p className="text-gray-600 md:text-lg">Units Ready</p>
+              <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+15</h3>
+              <p className="text-gray-600 md:text-lg">Projects</p>
             </div>
             <div className='border-b border-[#C4C7D7] pb-10 mr-2'>
               <h3 className=" text-2xl md:text-5xl font-medium text-gray-900 mb-2">+2K</h3>

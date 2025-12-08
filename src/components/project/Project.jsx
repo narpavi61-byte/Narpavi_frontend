@@ -185,7 +185,7 @@ export default function Project() {
       id: 1,
       image: "https://ik.imagekit.io/zpswxfgjd/avadi5.jpg",
       price: "",
-      title: "Avadi (Upcoming)",
+      title: "Avadi [Upcoming]",
       address: "Avadi, Tamil Nadu",
       area: "3,800 sq.ft",
       status: "upcoming"
@@ -194,7 +194,7 @@ export default function Project() {
       id: 2,
       image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2017.13.29_a606b47d.jpg",
       price: "",
-      title: "OMR Thiruporur (Upcoming)",
+      title: "OMR Thiruporur [Upcoming]",
       address: "OMR / Thiruporur area, Tamil Nadu",
       area: "2,200 sq.ft",
       status: "upcoming"
@@ -208,24 +208,33 @@ export default function Project() {
     //   area: "2,200 sq.ft",
     //   status: "upcoming"
     // },
-    {
-      id: 3,
-      image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.05_e1309213.jpg",
-      price: "",
-      title: "The Jewel City PH - III (Upcoming)",
-      address: "Padappai / project site, Tamil Nadu",
-      area: "4,200 sq.ft",
-      status: "upcoming"
-    },
+    // {
+    //   id: 3,
+    //   image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.05_e1309213.jpg",
+    //   price: "",
+    //   title: "The Jewel City PH - III [ongoing]",
+    //   address: "Padappai / project site, Tamil Nadu",
+    //   area: "4,200 sq.ft",
+    //   status: "upcoming"
+    // },
 
     // Ongoing items (marked explicitly)
     {
-      id: 4,
+      id: 3,
       image: "https://ik.imagekit.io/zpswxfgjd/WhatsApp%20Image%202025-11-19%20at%2016.30.05_e1309213.jpg",
       price: "",
       title: "The Jewel City PH - II [ongoing]",
       address: "Padappai, Tamil Nadu ",
       area: "9,200 sq.ft",
+
+    },
+     {
+      id: 4,
+      image: "https://ik.imagekit.io/zpswxfgjd/Vasantham.jpg",
+      price: "",
+      title: "Vasantham Avenue [ongoing]",
+      address: "Kayarambedu,Guduvancherry",
+      area: "8,200 sq.ft",
 
     },
     {
